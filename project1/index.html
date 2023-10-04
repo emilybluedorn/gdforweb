@@ -20,16 +20,60 @@
         <h2>An archive of research by <a href="https://emilybluedorn.com/" target="_blank">Emily Bluedorn</a></h2>
   </header>
 
+
+
+<!-- attempt at filterable information! -->
+
+<!-- Control buttons -->
+<div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn one" onclick="filterSelection('romance')"> Romance</button>
+    <button class="btn two" onclick="filterSelection('mythology')"> Mythology</button>
+    <button class="btn three" onclick="filterSelection('sentiment')"> Sentiment</button>
+  </div>
+  
+  <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+  <div class="popups">
+
+    <div class="filterDiv romance" id="entry 01">
+        <a href="#popup1">
+            <img src="assets/Esther.jpg" width="200px">
+            <div><i>Valentines,</i> Esther Howland</div>
+         </a>
+    </div>
+
+    <div class="filterDiv mythology sentiment">broom</div>
+    <div class="filterDiv romance">Elizabeth's Project</div>
+    <div class="filterDiv mythology">the witch</div>
+  </div>
+
+  <!-- Attempt at Pop-Up for each entry -->
+
+  <div id="popup1" class="popup-container">
+    <div class="popup-content">
+        <a href="#" class="close">&times;</a>
+        <h3>Popup1</h3>
+        <p>textual information</p>
+    </div>
+
+  </div>
+
+
+
 <!-- attempt at sidebar -->
 	<div id="sidebar">
 
 		<p>
-            Inheritance is an ongoing archive of thesis research by me (Emily Bluedorn) conducted at RISD in the 2023/2024 school year. Publishing thoughts and discoveries online opens up the conversation to be a more inclusive, collaborative process... so, join me in this exploration!
+             This website is an ongoing archive of thesis research by me (Emily Bluedorn) conducted at RISD in the 2023/2024 school year. Publishing thoughts and discoveries online opens up the conversation to be a more inclusive, collaborative process... so, join me in this exploration! 
         </p>
 
         <p>
             emilyellenbluedorn@gmail.com
             @emilyebluedesign
+        </p>
+
+        <p>
+            Image & content credits to the following artists: Robert Eggars, Elizabeth Goodspeed, Ree Morton, Barbara Broughel, and Esther Howland.
         </p>
 
 		<div id="sidebar-btn">
