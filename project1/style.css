@@ -3,6 +3,11 @@
 	font-family: "arizona";
 }
 
+@font-face {
+	src: url("fonts/ABCArizonaSans-Regular.otf") format("opentype");
+	font-family: "arizonasans";
+}
+
 body {
     background-color: #FAF4F2;
     color: #6D2C28;
@@ -28,11 +33,19 @@ a:hover {
     overflow: hidden;
     padding-top:2em
   }
+
+  .popups img {
+    border: solid 1px #6D2C28;
+  }
+
+  .popups img:hover {
+    filter: drop-shadow(3px 4px 4px #FFA3F0);
+  }
   
   .filterDiv {
     float: left;
     color: #6D2C28;
-    width: 200px;
+    width: 33%;
    /*line-height: 100px; */
     text-align: left;
     margin: 2px;
@@ -42,6 +55,7 @@ a:hover {
 
   #myBtnContainer {
     margin-top:3em;
+    margin-bottom:5em;
   }
   
   /* The "show" class is added to the filtered elements */
@@ -53,9 +67,11 @@ a:hover {
   .btn {
     border: 1px #6D2C28 solid;
     outline: none;
-    padding: 12px 16px;
+    padding: 6px 8px;
+    font-family: "arizonasans";
     cursor: pointer;
     border-radius: 15px;
+    color: #6D2C28;
   }
 
   .btn.one {
@@ -71,11 +87,10 @@ a:hover {
   } 
 
 
-
-  
   /* Add a light grey background on mouse-over */
   .btn:hover {
-    background-color: #ddd;
+    background-color: #6D2C28;
+    color: #FAF4F2;
   }
   
   /* Add a dark background to the active button */
@@ -109,6 +124,8 @@ a:hover {
     border: 1px solid #888;
     width: 50%;
     height:100%;
+    filter: drop-shadow(3px 4px 4px #6d2c28);
+
 }
 .popup-content p{
     font-size: 17px;
@@ -201,7 +218,9 @@ p {
 
 h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 4.5vw;
+    font-weight: 100;
+
 }
 
 h2 {
