@@ -160,26 +160,36 @@ a:hover {
   transform: scale(1);
 }
 
-.popup-container h3{
-
-}
 
 /* attempt at sidebar */
 
 #sidebar{
 	background:#6D2C28;
-	width:50%;
-	height:100%;
-	display:block;
+	display:none;
+  display: block;
 	position:absolute;
-	right:-50%;
+	right: 0;
 	top:0px;
 	transition:left 0.3s linear;
 }
 
-#sidebar.visible{
+#block {
+  display: none;
+  width: 50vw;
+  background: #6D2C28;
+  height:100dvh; 
+  /* dvh accounts for the bar on bottom. */
+  right:0%;
+  top:0px;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-wrap:break-word ;
+}
+
+#block.visible{
 	right:0px;
 	transition:left 0.3s linear;
+  display: block;
 }
 
 p {
@@ -206,7 +216,9 @@ p {
 	position:absolute;
 	top:0px;
     padding-top: 2%;
-	left:-60px;
+	right: 0;;
+  z-index: 99999;
+  filter: invert(100%);
 }
 
 #sidebar-btn span{
