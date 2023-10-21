@@ -132,7 +132,7 @@ a:hover {
     border: 1px solid #888;
     width: 50%;
     height:100%;
-    filter: drop-shadow(3px 4px 4px #6d2c28);
+    filter: drop-shadow(3px 0px 4px #FFA3F0);
 
 }
 .popup-content p{
@@ -185,6 +185,7 @@ a:hover {
   display: none;
   width: 50vw;
   background: #6D2C28;
+  filter: drop-shadow(-3px 0px 4px #FFA3F0);
   height:100dvh; 
   /* dvh accounts for the bar on bottom. */
   right:0%;
@@ -226,7 +227,7 @@ p {
     padding-top: 2%;
 	right: 0;;
   z-index: 99999;
-  filter: invert(100%);
+  /* filter: invert(100%); */
 }
 
 #sidebar-btn span{
