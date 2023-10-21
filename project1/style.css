@@ -225,14 +225,14 @@ p {
 	position:absolute;
 	top:0px;
     padding-top: 2%;
-	right: 0;;
+	right: 0;
   z-index: 99999;
   /* filter: invert(100%); */
 }
 
 #sidebar-btn span{
 	height:1.5px;
-	background:#6D2C28;
+	background:#FFA3F0;
 	margin-bottom:5px;
 	display:block;
 }
