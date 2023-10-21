@@ -31,7 +31,11 @@ a:hover {
 
 .popups {
     overflow: hidden;
-    padding-top:2em
+    padding-top:2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
   }
 
   .popups img {
@@ -45,12 +49,12 @@ a:hover {
   .filterDiv {
     float: left;
     color: #6D2C28;
-    width: 33%;
+    /* width: 33%; */
    /*line-height: 100px; */
     text-align: left;
-    margin: 2px;
+    /* margin: 2px; */
     display: none; /* Hidden by default */
-    padding-right:2em;
+    padding:1em;
   }
 
   #myBtnContainer {
