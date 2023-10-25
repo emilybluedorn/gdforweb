@@ -24,3 +24,9 @@ function updateDateTime() {
 setInterval(updateDateTime);
 
 
+// button attempt -- works but only for one color not both directions
+
+function changeClass() {
+  var element = document.querySelector("#blue");
+  element.classList.replace("cls-1", "cls-2");
+}

@@ -84,5 +84,15 @@ div#color\ green {
   background-color: #399A75;
 }
 
+.cls-1 {
+  fill: #3c399a;
+}
 
+.cls-2 {
+  fill: pink;
+}
+
+.cls-3 {
+  fill: green;
+}
 
