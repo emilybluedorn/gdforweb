@@ -8,6 +8,14 @@
 	font-family: "arizonasans";
 }
 
+
+h1 {
+  margin: 0;
+  font-size: 4.5vw;
+  font-weight: 100;
+  font-family: "odile-deco-initials";
+}
+
 body {
     background-color: #FAF4F2;
     color: #6D2C28;
@@ -237,12 +245,7 @@ p {
 	display:block;
 }
 
-h1 {
-    margin: 0;
-    font-size: 4.5vw;
-    font-weight: 100;
 
-}
 
 h2 {
     font-size: 16px;
