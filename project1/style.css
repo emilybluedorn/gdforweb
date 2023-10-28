@@ -122,12 +122,6 @@ a:hover {
   }
 
 
-  /* Add a light grey background on mouse-over */
-  .active, .btn:hover {
-    background-color: #FFA3F0;
-    color: #6D2C28;
-  }
-
 
 /* attempt at Pop Ups FROM CODEPEN SAMPLE*/
 
@@ -276,3 +270,14 @@ p {
   background-color:#FFA3F0;
   color:#6D2C28;
 }
+
+
+  /* Add a light grey background on mouse-over */
+  .active {
+    background-color: blue;
+  }
+  
+  .btn:hover {
+    background-color: #FFA3F0;
+    color: #6D2C28;
+  }
