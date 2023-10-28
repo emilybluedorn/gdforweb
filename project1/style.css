@@ -124,8 +124,8 @@ a:hover {
 
   /* Add a light grey background on mouse-over */
   .active, .btn:hover {
-    background-color: #6D2C28;
-    color: #FAF4F2;
+    background-color: #FFA3F0;
+    color: #6D2C28;
   }
 
 
@@ -256,4 +256,23 @@ p {
 	background:#FFA3F0;
 	margin-bottom:5px;
 	display:block;
+}
+
+
+.unselected {
+  display:none;
+}
+
+.entry {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top:5%;
+  font-size: 32px;
+  border-bottom: solid 1px #6D2C28;
+  padding-bottom:1%;
+}
+
+.entry:hover {
+  background-color:#FFA3F0;
+  color:#6D2C28;
 }
