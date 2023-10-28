@@ -69,7 +69,7 @@ span#color {
   display: flex;
 }
 
-div#color\ pink, div#color\ green {
+div#color\ pink, div#color\ green, div#color\ navy {
   width:50px;
   height: 25px;
   border-radius: 5%;
@@ -84,15 +84,23 @@ div#color\ green {
   background-color: #399A75;
 }
 
+div#color\ navy {
+  background-color: #394B5A;
+}
+
 .cls-1 {
   fill: #3c399a;
 }
 
 .cls-2 {
-  fill: pink;
+  fill: #F5989E;
 }
 
 .cls-3 {
-  fill: green;
+  fill: #399A75;
+}
+
+.cls-4 {
+  fill: #394B5A;
 }
 

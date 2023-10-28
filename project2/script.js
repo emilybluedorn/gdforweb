@@ -38,6 +38,12 @@ function changeClass_3() {
   element.classList.add('cls-3');
 }
 
+function changeClass_4() {
+  var element = document.querySelector("#blue");
+  element.removeAttribute("class");
+  element.classList.add('cls-4');
+}
+
 /* 0. define button*/
 var button = document.querySelector("#color").find('button');
 
@@ -51,19 +57,3 @@ var button = document.querySelector("#color").find('button');
  element.classList.add('cls-' + number);
 
 
-// collapsible
-
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
