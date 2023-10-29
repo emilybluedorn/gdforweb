@@ -73,20 +73,13 @@ button {
   all:unset;
 }
 
-/* button:focus {
-  border: solid 1px red;
-} */
 
-/* attempting to leave button in a selected state. */
-.special {
-  border: solid 1px red;
-}
 
 div#color\ pink, div#color\ green, div#color\ navy, div#color\ gold {
   width:50px;
   height: 25px;
   border-radius: 5%;
-  margin-right:10px;
+  /* margin-right:10px; */
 }
 
 div#color\ pink {
@@ -111,6 +104,7 @@ div#color\ gold {
 
 .cls-2 {
   fill: #F5989E;
+  width: 100%;
 }
 
 .cls-3 {
@@ -125,4 +119,28 @@ div#color\ gold {
   fill: #AC936E;
 }
 
+button.clr {
+  margin-right:10px;
+}
 
+/* Style the buttons */
+.clr {
+  border: none;
+  outline: none;
+  /* padding: 10px 16px; */
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.clr:hover {
+  /* color: white; */
+  border:solid 1px red;
+  border-radius: 5%;
+}
+
+/* ul > li {
+  display: inline;
+  padding: 1rem;
+} */

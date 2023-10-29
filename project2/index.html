@@ -29,7 +29,7 @@
 
 
   <!-- VALENTINE GENERATOR -->
-  <div class="accordion-wrapper active">
+  <div class="accordion-wrapper">
     <div class="btn-wrapper">
       <button>Valentine Generator</button>
     </div>
@@ -42,10 +42,10 @@
         <p>Background Color:</p>
 
         <span id="color">
-            <button class="btn" onclick="changeClass_2()" data-number="2"><div id="color pink"></div></button>
-            <button class="btn" onclick="changeClass_3()" data-number="3"><div id="color green"></div></button>
-            <button class="btn" onclick="changeClass_4()" data-number="4"><div id="color navy"></div></button>
-            <button class="btn" onclick="changeClass_5()" data-number="5"><div id="color gold"></div></button>
+            <button class="clr active" onclick="changeClass_2()" data-number="2"><div id="color pink"></div></button>
+            <button class="clr" onclick="changeClass_3()" data-number="3"><div id="color green"></div></button>
+            <button class="clr" onclick="changeClass_4()" data-number="4"><div id="color navy"></div></button>
+            <button class="clr" onclick="changeClass_5()" data-number="5"><div id="color gold"></div></button>
 
         </span>
 
@@ -56,7 +56,23 @@
 
     </div>
   </div>
+  <script>
+    console.log('isthisthingon');
 
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("color");
+    var btns = header.getElementsByClassName("clr");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace(" active", "");
+        }
+        this.className += " active";
+      });
+    }
+
+  </script>
 
 </body>
 </html>
