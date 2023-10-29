@@ -37,7 +37,7 @@
 
     <!-- filterable information! -->
     <div id="myBtnContainer">
-        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
         <button class="btn"  onclick="filterSelection('romance')"> Romance</button>
         <button class="btn" onclick="filterSelection('mythology')"> Mythology</button>
         <button class="btn" onclick="filterSelection('sentiment')"> Sentiment</button>
@@ -130,6 +130,25 @@
 
 <!-- SECOND TAB ON WEBSITE -->
 <div id="making" class="unselected"></div>
+
+
+<script>
+  console.log('isthisthingon');
+
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myBtnContainer");
+  var btns = header.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) {
+        current[0].className = current[0].className.replace(" active", "");
+      }
+      this.className += " active";
+    });
+  }
+
+</script>
 
 
 

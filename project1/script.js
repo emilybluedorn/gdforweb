@@ -13,11 +13,6 @@
 
 function filterSelection(c) {
 
-  // just going to select the FIRST btn class in the list -- need to specify
-  var element = document.querySelector(".btn");
-  element.classList.add('active');
-
-
   
   var x, i;
   x = document.getElementsByClassName("filterDiv");
