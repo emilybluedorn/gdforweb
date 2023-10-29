@@ -10,18 +10,19 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
   <script src="script1.js"></script>
 </head>
+
 <body>
 
-  <div id="myDIV">
-    <ul>
-      <li class="btn active">LINK1</li>
-      <li class="btn">LINK2</li>
-      <li class="btn">LINK3</li>
-      <li class="btn">LINK4</li>
-    </ul>
-  </div>
+  <p id="p">This text will change red when you click the button</p>
+  <button id="b">Make Text Red</button>   
 
+  <script>
+    console.log('isthisthingon');
 
+document.getElementById("b").addEventListener('click', function () {  document.getElementById("p").innerHTML = "See";
+document.getElementById("p").style.color="red";                                            
+})
+  </script>
 
 </body>
 </html>
