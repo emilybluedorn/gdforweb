@@ -69,7 +69,20 @@ span#color {
   display: flex;
 }
 
-div#color\ pink, div#color\ green, div#color\ navy {
+button {
+  all:unset;
+}
+
+/* button:focus {
+  border: solid 1px red;
+} */
+
+/* attempting to leave button in a selected state. */
+.special {
+  border: solid 1px red;
+}
+
+div#color\ pink, div#color\ green, div#color\ navy, div#color\ gold {
   width:50px;
   height: 25px;
   border-radius: 5%;
@@ -88,8 +101,12 @@ div#color\ navy {
   background-color: #394B5A;
 }
 
-.cls-1 {
-  fill: #3c399a;
+div#color\ gold {
+  background-color: #AC936E;
+}
+
+.test {
+  fill: #F5989E;
 }
 
 .cls-2 {
@@ -103,4 +120,9 @@ div#color\ navy {
 .cls-4 {
   fill: #394B5A;
 }
+
+.cls-5 {
+  fill: #AC936E;
+}
+
 
