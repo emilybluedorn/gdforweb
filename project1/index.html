@@ -27,109 +27,130 @@
   </header>
 
 
-  <div class="sections">
-    <h3 id="collected">Collected References</h3>
-    <h3 id="thinking">Thinking & Making</h3>
-  </div>
+<!-- toggle tab links -->
+<div class="tab">
+  <button class="tablinks active" onclick="openCity(event, 'London')">Collected References</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Thinking & Making</button>
+</div>
+
+<!-- Tab content WITH COLLAPSIBLES -->
+<div id="London" class="tabcontent" style="display:block">
+
+  <!-- need to put the filterable items here -->
 
 
-<div id="references">
+        <div id="references">
 
-    <!-- filterable information! -->
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn"  onclick="filterSelection('romance')"> Romance</button>
-        <button class="btn" onclick="filterSelection('mythology')"> Mythology</button>
-        <button class="btn" onclick="filterSelection('sentiment')"> Sentiment</button>
-        <button class="btn" onclick="filterSelection('craft')"> craft</button>
+          <!-- filterable information! -->
+          <div id="myBtnContainer">
+              <button class="btn" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn"  onclick="filterSelection('romance')"> Romance</button>
+              <button class="btn" onclick="filterSelection('mythology')"> Mythology</button>
+              <button class="btn" onclick="filterSelection('sentiment')"> Sentiment</button>
+              <button class="btn" onclick="filterSelection('craft')"> craft</button>
 
-      </div>
+            </div>
 
-      
-      
-      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-      <div class="popups">
+            
+            
+            <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="popups">
 
-        <div class="filterDiv romance craft show" id="entry 01">
+              <div class="filterDiv romance craft show" id="entry 01">
 
-            <a href="#popup1">
-                <img src="assets/projectbuttontest.jpg" width="100%">
-                <div><i>Valentines,</i> Esther Howland</div>
-            </a>
+                  <a href="#popup1">
+                      <img src="assets/projectbuttontest.jpg" width="100%">
+                      <div><i>Valentines,</i> Esther Howland</div>
+                  </a>
+              </div>
+
+              <div class="filterDiv romance craft show" id="entry 02">
+
+                <a href="#popup2">
+                    <img src="assets/craft.jpg" width="100%">
+                    <div><i>Craft Reader,</i> Esther Howland</div>
+                </a>
+              </div>
+
+
+              <div class="filterDiv romance show" id="entry 03">
+
+                <a href="#popup3">
+                    <img src="assets/witch.jpg" width="100%">
+                    <div><i>The Witch,</i> Robert Eggars</div>
+                </a>
+              </div>
+
+
+              <div class="filterDiv romance show" id="entry 04">
+
+                <a href="#popup4">
+                    <img src="assets/witch.jpg" width="100%">
+                    <div><i>The Witch,</i> Robert Eggars</div>
+                </a>
+              </div>
+
+              <div class="filterDiv mythology sentiment show">broom</div>
+
+              <div class="filterDiv romance show">Elizabeth's Project</div>
+
+              <div class="filterDiv mythology show">the witch</div>
+
+            </div>
+
+            <!-- Attempt at Pop-Up for each entry -->
+
+
+            <div id="popup1" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                  <!-- Title --> <h1>Signs of Love</h1> 
+                  <!-- Creator --> <h2>by Ree Morton</h2>
+                  <!-- Image --> <img src="assets/signsoflove.jpeg" width="100%">
+                  <!-- Description! --> <h3>Description of project... going to have to overwrite styles</h3>
+              </div>
+            </div>
+
+            <div id="popup2" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                  <!-- Title --> <h1>Craft Reader</h1> 
+                  <!-- Creator --> <h2>by </h2>
+                  <!-- Image --> <img src="assets/signsoflove.jpeg" width="100%">
+                  <!-- Description! --> <h3>Craft reader description test</h3>
+              </div>
+            </div>
+
+            <div id="popup3" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                  <!-- Title --> <h1>The Witch</h1> 
+                  <!-- Creator --> <h2>by </h2>
+                  <!-- Image --> <img src="assets/signsoflove.jpeg" width="100%">
+                  <!-- Description! --> <h3>Robert Eggarst</h3>
+              </div>
+            </div>
+
         </div>
 
-        <div class="filterDiv romance craft show" id="entry 02">
-
-          <a href="#popup2">
-              <img src="assets/craft.jpg" width="100%">
-              <div><i>Craft Reader,</i> Esther Howland</div>
-          </a>
-        </div>
-
-
-        <div class="filterDiv romance show" id="entry 03">
-
-          <a href="#popup3">
-              <img src="assets/witch.jpg" width="100%">
-              <div><i>The Witch,</i> Robert Eggars</div>
-          </a>
-        </div>
-
-
-        <div class="filterDiv romance show" id="entry 04">
-
-          <a href="#popup4">
-              <img src="assets/witch.jpg" width="100%">
-              <div><i>The Witch,</i> Robert Eggars</div>
-          </a>
-        </div>
-
-        <div class="filterDiv mythology sentiment show">broom</div>
-
-        <div class="filterDiv romance show">Elizabeth's Project</div>
-
-        <div class="filterDiv mythology show">the witch</div>
-
-      </div>
-
-      <!-- Attempt at Pop-Up for each entry -->
-
-
-      <div id="popup1" class="popup-container">
-        <div class="popup-content">
-            <a href="#" class="close">&times;</a>
-            <!-- Title --> <h1>Signs of Love</h1> 
-            <!-- Creator --> <h2>by Ree Morton</h2>
-            <!-- Image --> <img src="assets/signsoflove.jpeg" width="100%">
-            <!-- Description! --> <h3>Description of project... going to have to overwrite styles</h3>
-        </div>
-      </div>
-
-      <div id="popup2" class="popup-container">
-        <div class="popup-content">
-            <a href="#" class="close">&times;</a>
-            <!-- Title --> <h1>Craft Reader</h1> 
-            <!-- Creator --> <h2>by </h2>
-            <!-- Image --> <img src="assets/signsoflove.jpeg" width="100%">
-            <!-- Description! --> <h3>Craft reader description test</h3>
-        </div>
-      </div>
-
-      <div id="popup3" class="popup-container">
-        <div class="popup-content">
-            <a href="#" class="close">&times;</a>
-            <!-- Title --> <h1>The Witch</h1> 
-            <!-- Creator --> <h2>by </h2>
-            <!-- Image --> <img src="assets/signsoflove.jpeg" width="100%">
-            <!-- Description! --> <h3>Robert Eggarst</h3>
-        </div>
-      </div>
 
 </div>
 
+<div id="Paris" class="tabcontent">
+    <button type="button" class="collapsible">Open Collapsible</button>
+      <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
 
-<!-- SECOND TAB ON WEBSITE -->
-<div id="making" class="unselected"></div>
+    <button type="button" class="collapsible">Open Collapsible</button>
+      <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+</div>
+
+
+
+
 
 
 <script>
@@ -147,6 +168,48 @@
       this.className += " active";
     });
   }
+
+
+  // for TABS
+  function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+
+  // For COLLAPSIBLES
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    } 
+    
 
 </script>
 
