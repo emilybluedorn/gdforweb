@@ -12,8 +12,6 @@
 
 
 function filterSelection(c) {
-
-  
   var x, i;
   x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "";
@@ -48,7 +46,6 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ");
-  
 }
 
 
