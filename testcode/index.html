@@ -16,80 +16,13 @@
 
 <body>
 
-
-<!-- toggle tab links -->
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">References</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Making</button>
-</div>
-
-<!-- Tab content WITH COLLAPSIBLES -->
-<div id="London" class="tabcontent">
-    <button type="button" class="collapsible">Open Collapsible</button>
-      <div class="content">
-      <p>Lorem ipsum...</p>
-    </div>
-
-    <button type="button" class="collapsible">Open Collapsible</button>
-      <div class="content">
-      <p>Lorem ipsum...</p>
-    </div>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-
-
+  <img id="imageid" src="#" height="300" width="300">
+    </br>
+  <button onClick="FirstImage()">First Image</button>
+  <button onClick="SecondImage()">Second Image</button>
 
   <script>
-
-  // for TABS
-      function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
-
-
-  // For COLLAPSIBLES
-
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    } 
+    var myImage=document.querySelector("#imageid");
     
   </script>
 
