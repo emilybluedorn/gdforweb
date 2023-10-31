@@ -67,15 +67,17 @@ h2 {
   font-family: "odile";
   color: #535A6F;
   font-weight: lighter;
-  margin-right: 2rem;
+  margin-left: 2rem;
+  text-align: right;
 }
 
 body {
-  background-color: #afafaf;
+  background-color: #FAF4F2;
 }
 
 .information {
   display: flex;
+  text-align: right;
 }
 
 
@@ -186,16 +188,13 @@ button.clr {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  color:#6D2C28;
+  color:#FAF4F2;
   cursor: pointer;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom:20px;
+  padding-left:20px;
   width: 100%;
-  border:none;
-  border-bottom:solid 1px #6D2C28;
   text-align: left;
-  outline: none;
   font-size: 18px;
 }
 
@@ -212,4 +211,30 @@ button.clr {
   background-color: #b01212;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top:2em;
+  padding-bottom:2em;
+  font-family: "odile";
+  font-size: 16px;
+  color: #535A6F;
+}
+
+.credits {
+  text-align: right;
+  grid-column-start:3;
+}
+
+button.green {
+  background-color:#399A75;
+}
+
+button.pink {
+  background-color:#F5989E;
+}
+
+button.gold {
+  background-color:#AC936E;
+}
 
