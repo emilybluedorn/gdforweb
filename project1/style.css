@@ -64,7 +64,8 @@ body {
 
 
 a {
-    color:#6D2C28
+    color:#6D2C28;
+    text-decoration:none;
 }
 
 a:hover {
@@ -292,14 +293,16 @@ p {
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   background-color: #eee;
-  color: #444;
+  color:#6D2C28;
   cursor: pointer;
-  padding: 18px;
+  padding-top: 40px;
+  padding-bottom:20px;
   width: 100%;
-  border: none;
+  border:none;
+  border-bottom:solid 1px #6D2C28;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -312,7 +315,7 @@ p {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #b01212;
 }
 
 
@@ -357,4 +360,11 @@ p {
   display: none;
   /* padding: 6px 12px; */
   border-top: none;
+}
+
+.projecttext {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 14px;
+  font-family:'arizonasans';
 }
