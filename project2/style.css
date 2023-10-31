@@ -116,7 +116,7 @@ button {
 div#color\ pink, div#color\ green, div#color\ navy, div#color\ gold {
   width:50px;
   height: 25px;
-  border-radius: 5%;
+  /* border-radius: 5%; */
   /* margin-right:10px; */
 }
 
@@ -175,7 +175,7 @@ button.clr {
 .clr:hover {
   /* color: white; */
   border:solid 1px red;
-  border-radius: 5%;
+  /* border-radius: 5%; */
 }
 
 /* ul > li {
@@ -209,10 +209,10 @@ button.clr {
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
+  padding-top: 18px;
+  padding-bottom:18px;
   display: none;
   overflow: hidden;
-  background-color: #b01212;
 }
 
 footer {
