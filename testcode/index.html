@@ -16,10 +16,14 @@
 
 <body>
 
-  <img id="imageid" src="#" height="300" width="300">
-    </br>
-  <button onClick="FirstImage()">First Image</button>
-  <button onClick="SecondImage()">Second Image</button>
+  <div class="wrapper">
+    <img id="imageid" src="image1.svg" height="600" width="600">
+      </br>
+ </div>
+
+
+    <button onClick="FirstImage()">Butterfly</button>
+    <button onClick="SecondImage()">Leafy</button>
 
   <script>
 
@@ -27,6 +31,10 @@
 
     function FirstImage() {
       myImage.src="image1.svg";
+    }
+
+    function SecondImage() {
+      myImage.src="image2.svg";
     }
     
   </script>

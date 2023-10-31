@@ -1,0 +1,14 @@
+.wrapper {
+  width:600px;
+  height:600px;
+  background-color: blue;
+  position:relative;
+}
+
+
+#imageid {
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+
