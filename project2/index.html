@@ -81,6 +81,20 @@
   </div>
 
 
+<div id="Paris" class="tabcontent">
+  <button type="button" class="collapsible">History of Valentines</button>
+    <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+
+  <button type="button" class="collapsible">Symbologyof Valentines</button>
+    <div class="content">
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+
+
+
  <!-- <div class="wrapper">
           <img id="imageid" src="assets/valentine-12.png" height="630" width="458">
             </br> -->
@@ -122,6 +136,27 @@
     function FourthImage() {
       myImage.src="assets/valentine-15.png";
     }
+
+
+
+  
+  // For COLLAPSIBLES
+
+  var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    } 
+    
 
   </script>
 
