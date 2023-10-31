@@ -10,6 +10,32 @@
 
 /* HEADER / GENERAL FORMATTING */
 
+.columns {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Layer_1 {
+  width:477px;
+  height:657px;
+}
+
+.lace {
+  border:solid 1px #535A6F;
+  padding:.5em;
+  border-radius:100%;
+}
+
+.Valentine {
+  position:relative;
+}
+
+#imageid {
+  position:absolute;
+  top:11px;
+  left:9px;
+}
+
 header {
   padding:1.25rem;
   display: flex;
@@ -35,7 +61,7 @@ h2 {
 }
 
 body {
-  background-color: #FAF4F2;
+  background-color: #afafaf;
 }
 
 .information {

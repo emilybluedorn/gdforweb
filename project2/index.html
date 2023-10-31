@@ -37,6 +37,8 @@
     <!-- this is where I put the entire section worth of code??? -->
       
     
+    <div class="columns">
+
     <div class="col1">
 
         <p>Background Color:</p>
@@ -46,12 +48,32 @@
             <button class="clr" onclick="changeClass_3()" data-number="3"><div id="color green"></div></button>
             <button class="clr" onclick="changeClass_4()" data-number="4"><div id="color navy"></div></button>
             <button class="clr" onclick="changeClass_5()" data-number="5"><div id="color gold"></div></button>
-
         </span>
 
-      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780.79012 1035.20988"><defs></defs><rect class="test" id="blue" class="cls-1" x="24.07089" y="16.83165" width="727.33971" height="996.13917"/></svg>
+        <p>Lace Pattern:</p>
 
-      </div>
+    
+          <button class="lace" onClick="FirstImage()">01</button>
+          <button class="lace" onClick="SecondImage()">02</button>
+          <button class="lace" onClick="ThirdImage()">03</button>
+          <button class="lace" onClick="FourthImage()">04</button>
+    </div>
+
+    <div class="col2">
+        
+        <div class="Valentine">
+            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780.79012 1035.20988"><defs></defs><rect class="test" id="blue" class="cls-1" x="24.07089" y="16.83165" width="727.33971" height="996.13917"/></svg>
+            <img id="imageid" src="assets/valentine-12.png" height="630" width="458">
+          </div>
+
+    </div>
+
+  </div>
+
+
+ <!-- <div class="wrapper">
+          <img id="imageid" src="assets/valentine-12.png" height="630" width="458">
+            </br> -->
 
 
     </div>
@@ -70,6 +92,25 @@
         }
         this.className += " active";
       });
+    }
+
+
+    var myImage=document.querySelector("#imageid");
+
+    function FirstImage() {
+      myImage.src="assets/valentine-12.png";
+    }
+
+    function SecondImage() {
+      myImage.src="assets/valentine-13.png";
+    }
+
+    function ThirdImage() {
+      myImage.src="assets/valentine-14.png";
+    }
+
+    function FourthImage() {
+      myImage.src="assets/valentine-15.png";
     }
 
   </script>
