@@ -11,32 +11,221 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="script1.js"></script>
+  <!-- do i need this? -->
+  <script src="//daybrush.com/moveable/release/latest/dist/moveable.min.js"></script>
+
 </head>
 
-
+<html>
 <body>
 
-  <div class="wrapper">
-    <img id="imageid" src="image1.svg" height="600" width="600">
-      </br>
- </div>
-
-
-    <button onClick="FirstImage()">Butterfly</button>
-    <button onClick="SecondImage()">Leafy</button>
+ <div style="width:50%; height:100%; padding-top: 20px; float: left;">
+  <div id="container-left" style="position:static; left:10px; top:20px; width:300; height:660; z-index:-1; overflow: auto">
+    <h3>Drag me</h3>
+    <div draggable="true" ondragstart="drag(event)">
+      <svg class="testSVG" height="100" width="150" preserveAspectRatio="xMidYMid" viewBox="20 30 160 150">
+          <path stroke="black" stroke-width="4" d="M25,50 l150,0 0,100 -150,0 z" fill="rgb(128,224,255)"></path>
+          <path d="M25,50 L175,150 M25,150 L175,50" fill="none" stroke="black" stroke-width="4"></path>
+        </svg>
+    </div>
+  </div>
+  <div class="container" id="container" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="backgroundTest(event)">
+    <h3>Dropzone</h3>
+  </div>
+</div>
+<div class="explain">
+  <h3>Drag and drop the blue symbol on the left into the dropzone. The symbol will not successfully drop unless it is in the yellow dropzone.</h3>
+  <h3>Dragging and dropping the blue symbol into the yellow dropzone automatically clones it using HTML5's build in drag-and-drop API. Manipulation of the symbol is done with Moveable.js.</h3>
+  <h3>Enabling and disabling the symbol control box is handled by the backgroundTest() function</h3>
+</div>
 
   <script>
 
-    var myImage=document.querySelector("#imageid");
+    // // HTML5 DRAG AND DROP API
+    // ///Drag'n Drop functions
+    // const allowDrop = ev => {
+    //   ev.preventDefault();
+    // };
 
-    function FirstImage() {
-      myImage.src="image1.svg";
-    }
+    // const drag = ev => {
+    //   ev.dataTransfer.setData("text", ev.target.id);
+    //   ev.dataTransfer.effectAllowed = "copy";
+    // };
 
-    function SecondImage() {
-      myImage.src="image2.svg";
-    }
-    
+    // const drop = event => {
+    //   event.preventDefault();
+    //   const x1 = event.clientX - 76; //getBoundingClientRect().width / 2
+    //   const y1 = event.clientY - 51; //getBoundingClientRect().height / 2
+    //   //var data = event.dataTransfer.getData("text");
+    //   //var copyimg = document.createElement("img");
+    //   const target = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    //   //var original = document.getElementById(data);
+    //   //copyimg.src = original.src;
+    //   target.innerHTML = document.querySelector(".testSVG").innerHTML;
+    //   event.target.appendChild(target);
+
+    //   const bbox = target.getBBox();
+    //   target.setAttribute("height", `${bbox.height}`);
+    //   target.setAttribute("width", `${bbox.width}`);
+    //   target.setAttribute(
+    //     "viewBox",
+    //     `${bbox.x}, ${bbox.y}, ${bbox.width}, ${bbox.height}`
+    //   );
+    //   target.classList.add("draggable");
+    //   target.setAttribute(
+    //     "style",
+    //     `position: absolute; top: ${y1}px; left:${x1}px;`
+    //   );
+    //   cloneSymbol(event);
+    // };
+    // // END HTML5 DRAG AND DROP API
+
+    // // MOVEABLE.JS
+    // const moveableoptions = {
+    //   // Set the target as null until someone moves and clones it onto the yellow background
+    //   target: null,
+    //   // If the container is null, the position is fixed. (default: parentElement(document.body))
+    //   container: document.body,
+    //   draggable: true,
+    //   resizable: true,
+    //   scalable: true,
+    //   rotatable: true,
+    //   warpable: false,
+    //   pinchable: true,
+    //   origin: false,
+    //   keepRatio: true,
+    //   edge: true,
+    //   throttleDrag: 0,
+    //   throttleScale: 0,
+    //   throttleRotate: 0
+    // };
+
+    // const moveable = new Moveable(document.body, moveableoptions);
+
+    // function cloneSymbol(event) {
+    //   // All "targets" will be symbols with the draggable class
+    //   var tgt = document.querySelectorAll(".draggable");
+    //   // Create the array for the targets
+    //   var arr = Array.from(tgt);
+    //   // Now push the targets on the yellow board to an arry
+    //   tgt.forEach(e => {
+    //     arr.push(e);
+    //   });
+    //   // Get the last target in the array and set it
+    //   moveable.target = arr.slice(-1)[0];
+    //   /* draggable */
+    //   moveable
+    //     .on("dragStart", ({ target, clientX, clientY }) => {
+    //       //console.log('onDragStart', target);
+    //     })
+    //     .on(
+    //       "drag",
+    //       ({
+    //         target,
+    //         transform,
+    //         left,
+    //         top,
+    //         right,
+    //         bottom,
+    //         beforeDelta,
+    //         beforeDist,
+    //         delta,
+    //         dist,
+    //         clientX,
+    //         clientY
+    //       }) => {
+    //         //console.log('onDrag left, top', left, top);
+    //         target.style.left = `${left}px`;
+    //         target.style.top = `${top}px`;
+    //       }
+    //     )
+    //     .on("dragEnd", ({ target, isDrag, clientX, clientY }) => {
+    //       //console.log('onDragEnd', target, isDrag);
+    //     });
+
+    //   /* scalable */
+    //   moveable
+    //     .on("scaleStart", ({ target, clientX, clientY }) => {
+    //       //console.log('onScaleStart', target);
+    //     })
+    //     .on(
+    //       "scale",
+    //       ({ target, scale, dist, delta, transform, clientX, clientY }) => {
+    //         //console.log('onScale scale', scale);
+    //         target.style.transform = transform;
+    //       }
+    //     )
+    //     .on("scaleEnd", ({ target, isDrag, clientX, clientY }) => {
+    //       //console.log('onScaleEnd', target, isDrag);
+    //     });
+
+    //   /* rotatable */
+    //   moveable
+    //     .on("rotateStart", ({ target, clientX, clientY }) => {
+    //       //console.log('onRotateStart', target);
+    //     })
+    //     .on(
+    //       "rotate",
+    //       ({ target, beforeDelta, delta, dist, transform, clientX, clientY }) => {
+    //         //console.log('onRotate', dist);
+    //         target.style.transform = transform;
+    //       }
+    //     )
+    //     .on("rotateEnd", ({ target, isDrag, clientX, clientY }) => {
+    //       //console.log('onRotateEnd', target, isDrag);
+    //     });
+
+    //   /* pinchable */
+    //   moveable
+    //     .on("pinchStart", ({ target, clientX, clientY }) => {
+    //       // pinchStart event occur before dragStart, rotateStart, scaleStart, resizeStart
+    //       //console.log('onPinchStart');
+    //     })
+    //     .on("pinch", ({ target, clientX, clientY, datas }) => {
+    //       // pinch event occur before drag, rotate, scale, resize
+    //       //console.log('onPinch');
+    //     })
+    //     .on("pinchEnd", ({ isDrag, target, clientX, clientY, datas }) => {
+    //       // pinchEnd event occur before dragEnd, rotateEnd, scaleEnd, resizeEnd
+    //       //console.log('onPinchEnd');
+    //     });
+
+    //   /* resizable */
+    //   //! Keep this enabled in order to disable resizing... idk man
+    //   moveable
+    //     .on("resizeStart", ({ target, clientX, clientY }) => {
+    //       //console.log('onResizeStart', target);
+    //     })
+    //     .on(
+    //       "resize",
+    //       ({ target, width, height, dist, delta, clientX, clientY }) => {
+    //         //console.log('onResize', target);
+    //         delta[0] && (target.style.width = `${width}px`);
+    //         delta[1] && (target.style.height = `${height}px`);
+    //       }
+    //     )
+    //     .on("resizeEnd", ({ target, isDrag, clientX, clientY }) => {
+    //       //console.log('onResizeEnd', target, isDrag);
+    //     });
+    // }
+
+    // // This toggles the control box on whatever element you click on
+    // function backgroundTest(event) {
+    //   document.querySelectorAll(".draggable").forEach(key => {
+    //     //https://stackoverflow.com/questions/24183286/drag-and-drop-to-div-behind-absolutely-positioned-div
+    //     let elements = document.elementsFromPoint(event.clientX, event.clientY);
+    //     let chosenTarget = elements.find(key => key.matches(".draggable"));
+    //     // If you click a symbol on the yellow background, it will set it as the Moveable target
+    //     // If you click the yellow background it will de-select the symbol so you can get that annoying control box out of view
+    //     chosenTarget
+    //       ? (moveable.target = chosenTarget)
+    //       : (moveable.target = undefined);
+    //   });
+    // }
+
+
+
+
   </script>
 
 </body>
