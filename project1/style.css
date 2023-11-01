@@ -362,9 +362,12 @@ p {
   border-top: none;
 }
 
-.projecttext {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.projecttext, .projecttext p {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
   font-size: 14px;
   font-family:'arizonasans';
+  color:#6D2C28;
 }
+
+
