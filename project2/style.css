@@ -242,3 +242,28 @@ button.gold {
   background-color:#AC936E;
 }
 
+
+
+/* sticker styles */
+
+.mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: none;
+  text-align: center;
+  border: none;
+  cursor: grab;
+}
+
+/* PRINT */
+
+.print {
+  outline: solid 1px #535A6F;
+  padding:20px;
+}
+
+.print:hover {
+background-color: #535A6F;
+color:antiquewhite;
+cursor: pointer;
+}
