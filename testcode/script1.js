@@ -6,10 +6,10 @@ const allowDrop = ev => {
     ev.preventDefault();
   };
   
-  const drag = ev => {
-    ev.dataTransfer.setData("text", ev.target.id);
-    ev.dataTransfer.effectAllowed = "copy";
-  };
+  // const drag = ev => {
+  //   ev.dataTransfer.setData("text", ev.target.id);
+  //   ev.dataTransfer.effectAllowed = "copy";
+  // };
   
   const drop = event => {
     event.preventDefault();
@@ -30,7 +30,7 @@ const allowDrop = ev => {
       "viewBox",
       `${bbox.x}, ${bbox.y}, ${bbox.width}, ${bbox.height}`
     );
-    target.classList.add("draggable");
+    target.classList.add("mydiv");
     target.setAttribute(
       "style",
       `position: absolute; top: ${y1}px; left:${x1}px;`
@@ -40,3 +40,4 @@ const allowDrop = ev => {
 
 
   
+
