@@ -267,3 +267,11 @@ background-color: #535A6F;
 color:antiquewhite;
 cursor: pointer;
 }
+
+.stickers {
+  display:flex;
+}
+
+.stickers img:hover {
+  cursor:pointer;
+}
