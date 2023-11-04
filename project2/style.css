@@ -17,13 +17,16 @@ body {
   margin: 0;
 }
 
-
+p {
+  all:none;
+}
 
 .columns {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1em;
   width:100%;
+  margin-bottom:20px;
 }
 
 .columns p {
@@ -31,10 +34,6 @@ body {
   padding:2%;
   margin:inherit;
   border-bottom:solid 1px #535A6F;
-}
-
-p {
-  all:none;
 }
 
 #Layer_1 {
@@ -50,13 +49,21 @@ p {
   border:solid 1px #535A6F;
   padding:.5em;
   border-radius:100%;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+.title {
+  border-top:solid 1px #535A6F;
 }
 
 #color {
   padding:1em;
 }
 
-span#doily {}
+span#doily {
+  margin-left:1em;
+}
 
 .Valentine {
   position:relative;
@@ -203,7 +210,7 @@ button.clr {
 .active,
 .clr:hover {
   /* color: white; */
-  border:solid 1px red;
+  border:solid 1px #535A6F;
   /* border-radius: 5%; */
 }
 
@@ -242,6 +249,10 @@ button.clr {
   padding-bottom:18px;
   display: none;
   overflow: hidden;
+}
+
+#paris {
+  margin-top:10px;
 }
 
 footer {
@@ -298,7 +309,8 @@ cursor: pointer;
 }
 
 .stickers {
-  display:flex;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .stickers img:hover {

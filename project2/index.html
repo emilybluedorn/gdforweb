@@ -14,153 +14,138 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
   <script src="script.js"></script>
-
   <style>
-    #draggable { width: 100px; height: 100px; padding: 0.5em; }
-    #drag2 { width: 100px; height: 100px; padding: 0.5em; }
+    #drag2, #drag3, #draggable, #drag4, #drag5, #drag6, #drag7, #drag8, #drag9 { width: 100px; height: 100px; padding: 0.5em; }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
     $( function() {
       $( "#draggable" ).draggable();
-    } );
-  
-    $( function() {
       $( "#drag2" ).draggable();
+      $( "#drag3" ).draggable();
+      $( "#drag4" ).draggable();
+      $( "#drag5" ).draggable();
+      $( "#drag6" ).draggable();
+      $( "#drag7" ).draggable();
+      $( "#drag8" ).draggable();
+      $( "#drag9" ).draggable();
     } );
-  
     </script>
-  
-
 </head>
+
+
 <body>
 
-
   <Header>
-
     <h1>Displays of Affection</h1>
+    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.3244 0C10.9858 0 9.3617 4.40719 9.3617 4.40719C9.3617 4.40719 7.96368 0 3.62502 0C-0.713642 0 -3.51089 6.7485 9.45812 23C22.6187 6.84032 19.6631 0 15.3244 0Z" fill="#535A6F"/>
+    </svg>
     <div class="information">
       <h2 id="datetime"></h2>
       <h2>Info</h2>
     </div>
-
   </Header>
-  <!-- this is where all my webpage stuff should go-->
 
 
-  <!-- VALENTINE GENERATOR -->
-  <div class="accordion-wrapper">
-    
-    <div id="upperborder"></div>
+  <div id="upperborder"></div>
 
-    <div class="collapsing-div" style="display:block;">
-    <!-- this is where I put the entire section worth of code??? -->
       
-    
+  <!-- GENERATOR -->
     <div class="columns">
 
     <div class="col1">
-
       <div class="Valentine">
         <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780.79012 1035.20988"><defs></defs><rect class="test" id="blue" class="cls-1" x="24.07089" y="16.83165" width="727.33971" height="996.13917"/></svg>
         <img id="imageid" src="assets/valentine-12.png" height="630" width="458">
       </div>
-
-
-
-
     </div>
 
     <div class="col2">
-
       <p>Draggable stickers:</p>
-
-        
       <div class="stickers">
         <div id="draggable" class="ui-widget-content">
           <img src="assets/sticker-16.svg">
         </div>
-      
         <div id="drag2" class="ui-widget-content">
           <img src="assets/sticker-17.svg">
         </div>
+        <div id="drag3" class="ui-widget-content">
+          <img src="assets/sticker-18.svg">
+        </div>
+        <div id="drag4" class="ui-widget-content">
+          <img src="assets/sticker-19.svg">
+        </div>
+        <div id="drag5" class="ui-widget-content">
+          <img src="assets/sticker-20.svg">
+        </div>
+        <div id="drag6" class="ui-widget-content">
+          <img src="assets/sticker-21.svg">
+        </div>
+        <div id="drag7" class="ui-widget-content">
+          <img src="assets/sticker-22.svg">
+        </div>
+        <div id="drag8" class="ui-widget-content">
+          <img src="assets/sticker-23.svg">
+        </div>
+        <div id="drag9" class="ui-widget-content">
+          <img src="assets/sticker-24.svg">
+        </div>
       </div>
-
-        
     </div>
 
     <div class="col3">
-
-
       <p>Background Color:</p>
-
       <span id="color">
           <button class="clr active" onclick="changeClass_2()" data-number="2"><div id="color pink"></div></button>
           <button class="clr" onclick="changeClass_3()" data-number="3"><div id="color green"></div></button>
           <button class="clr" onclick="changeClass_4()" data-number="4"><div id="color navy"></div></button>
           <button class="clr" onclick="changeClass_5()" data-number="5"><div id="color gold"></div></button>
       </span>
-
-      <p>Lace Pattern:</p>
-
+      <p class="title">Lace Pattern:</p>
       <span id="doily">
         <button class="lace" onClick="FirstImage()">01</button>
         <button class="lace" onClick="SecondImage()">02</button>
         <button class="lace" onClick="ThirdImage()">03</button>
         <button class="lace" onClick="FourthImage()">04</button>
       </span>
-      
-        <p>Add a Message:</p>
-  
+        <p class="title">Add a Message:</p>
         <div class="print" onbeforeprint="printCard()" onClick="window.print()">Print</div>
-
-
-  </div>
-
-  </div>
-
-
-<div id="Paris" class="tabcontent">
-
-  <button type="button" class="collapsible pink">Valentine Generator</button>
-  <div class="content">
-    <p>The Valentine Generator will be moved into this section</p>
-
-  <!-- test -->
-
-      
-
-
-  </div>
-
-  <button type="button" class="collapsible green">History of Valentines</button>
-    <div class="content">
-      <p>History of Valentines will be written out in this section</p>
     </div>
 
-  <button type="button" class="collapsible gold">Symbology of Valentines</button>
-    <div class="content">
-      <p>The symbology of the valentines will be identified in this section</p>
   </div>
-</div>
 
 
 
- <!-- <div class="wrapper">
-          <img id="imageid" src="assets/valentine-12.png" height="630" width="458">
-            </br> -->
+    <!-- DROPDOWNS -->
+    <div class="accordion-wrapper">
+  
+      <div class="collapsing-div" style="display:block;">
 
+        <button type="button" class="collapsible green">History of Valentines</button>
+          <div class="content">
+            <p>History of Valentines will be written out in this section</p>
+          </div>
 
+        <button type="button" class="collapsible gold">Symbology of Valentines</button>
+          <div class="content">
+            <p>The symbology of the valentines will be identified in this section</p>
+        </div>
+
+      </div>
     </div>
-  </div>
 
+
+    <!-- FOOTER -->
   <footer>
     <p class="thanks">Thanks to the Mount Holyoke Library Collections and to the Met Open Source digital archive of work.</p>
     <p class="credits">Coded by Emily Bluedorn at RISD 2023 <br> Guidance by Minkyoung Kim</p>
   </footer>
 
 
+
+  <!-- JAVASCRIPT -->
   <script>
     console.log('isthisthingon');
 
@@ -215,64 +200,65 @@
         }
       });
     } 
-    
 
-    // FOR DRAG
-
-    //Make the DIV element draggagle:
-dragElement(document.querySelector(".mydiv"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    // pos1 = pos3 - e.clientX;
-    // pos2 = pos4 - e.clientY;
-    // pos3 = e.clientX;
-    // pos4 = e.clientY;
-    // // set the element's new position:
-    // elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    // elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-     elmnt.style.top = e.clientY - 50 + "px";
-    elmnt.style.left = e.clientX - 50 + "px";
-    // console.log(e.clientY);
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-
-// printing
+    // printing
 
 function printCard() {
   var mydiv = document.getElementById(elmnt.id);
   mydiv.style.left = e.clientX;
   alert(e.clientY);
 }
+
+    
+
+    // FOR DRAG -- simplified jquery in the code head
+
+//     //Make the DIV element draggagle:
+// dragElement(document.querySelector(".mydiv"));
+
+// function dragElement(elmnt) {
+//   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+//   if (document.getElementById(elmnt.id + "header")) {
+//     /* if present, the header is where you move the DIV from:*/
+//     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+//   } else {
+//     /* otherwise, move the DIV from anywhere inside the DIV:*/
+//     elmnt.onmousedown = dragMouseDown;
+//   }
+
+//   function dragMouseDown(e) {
+//     e = e || window.event;
+//     e.preventDefault();
+//     // get the mouse cursor position at startup:
+//     pos3 = e.clientX;
+//     pos4 = e.clientY;
+//     document.onmouseup = closeDragElement;
+//     // call a function whenever the cursor moves:
+//     document.onmousemove = elementDrag;
+//   }
+
+//   function elementDrag(e) {
+//     e = e || window.event;
+//     e.preventDefault();
+//     // calculate the new cursor position:
+//     // pos1 = pos3 - e.clientX;
+//     // pos2 = pos4 - e.clientY;
+//     // pos3 = e.clientX;
+//     // pos4 = e.clientY;
+//     // // set the element's new position:
+//     // elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+//     // elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+//      elmnt.style.top = e.clientY - 50 + "px";
+//     elmnt.style.left = e.clientX - 50 + "px";
+//     // console.log(e.clientY);
+//   }
+
+//   function closeDragElement() {
+//     /* stop moving when mouse button is released:*/
+//     document.onmouseup = null;
+//     document.onmousemove = null;
+//   }
+// }
 
   </script>
 
