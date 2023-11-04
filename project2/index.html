@@ -57,8 +57,9 @@
 
     <div class="col1">
       <div class="Valentine">
-        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780.79012 1035.20988"><defs></defs><rect class="test" id="blue" class="cls-1" x="24.07089" y="16.83165" width="727.33971" height="996.13917"/></svg>
-        <img id="imageid" src="assets/valentine-12.png" height="630" width="458">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="100 100 100 100"><defs></defs><rect class="test" id="blue" class="cls-1" x="24.07089" y="16.83165" width="727.33971" height="996.13917"/></svg>
+        <img id="imageid" src="assets/valentine-12.png" width="100%">
+        <span id="guests"></span>
       </div>
     </div>
 
@@ -111,6 +112,12 @@
         <button class="lace" onClick="FourthImage()">04</button>
       </span>
         <p class="title">Add a Message:</p>
+          <form>
+            <input type="text" id="textInput">
+            <button id="submitButton" class="btn btn-primary">Submit</button>
+          </form>
+  
+
         <div class="print" onbeforeprint="printCard()" onClick="window.print()">Print</div>
     </div>
 
@@ -209,7 +216,13 @@ function printCard() {
   alert(e.clientY);
 }
 
-    
+$(document).ready(function() {
+    $("#submitButton").on("click", function(e) {
+      e.preventDefault();
+      var input = $("#textInput").val()
+      $("#guests").html(input)
+    })
+  });
 
     // FOR DRAG -- simplified jquery in the code head
 

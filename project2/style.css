@@ -67,12 +67,12 @@ span#doily {
 
 .Valentine {
   position:relative;
+  display:inline-block;
 }
 
 #imageid {
   position:absolute;
-  top:11px;
-  left:9px;
+  left:0px;
 }
 
 header {
@@ -315,4 +315,14 @@ cursor: pointer;
 
 .stickers img:hover {
   cursor:pointer;
+}
+
+
+#guests {
+  color:red;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
