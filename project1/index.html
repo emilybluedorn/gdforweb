@@ -12,7 +12,7 @@
   <script src="script.js"></script>
 </head>
 <body>
-
+<!-- 
   <header>
         <h1>Inheritance?</h1>
         <div class="middle">
@@ -20,18 +20,26 @@
           <br>
          <h2>Reach out to me at emilyellenbluedorn@gmail.com or <a href="https://www.instagram.com/emilyebluedesign/" target="_blank">@emilyebluedesign</a></h2>
         </div>
-  </header>
+  </header> -->
 
 
 <!-- toggle tab links -->
 <div class="tab">
-  <button class="tablinks active" onclick="openCity(event, 'London')">Collected References</button>
+  <button class="tablinks active" onclick="openCity(event, 'Milan')">Inheritence: A Thesis</button>
+  <button class="tablinks" onclick="openCity(event, 'London')">Collected References</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Thinking & Making</button>
 </div>
 
+<div id="Milan" class="tabcontent" style="display:block">
+  <div class="description">
+    This website is an ongoing archive of thesis research by me (Emily Bluedorn) conducted at RISD in the 2023/2024 school year. My research centers around _____
+    Reach out to me at emilyellenbluedorn@gmail.com or @emilyebluedesign
+
+    </div>
+</div>
 
 <!-- Tab content WITH COLLAPSIBLES -->
-<div id="London" class="tabcontent" style="display:block">
+<div id="London" class="tabcontent">
 
   <!-- need to put the filterable items here -->
 
@@ -54,7 +62,7 @@
 
               <div class="filterDiv romance craft show" id="entry 01">
                   <a href="#popup1">
-                      <img src="assets/projectbuttontest.jpg" width="100%">
+                      <img src="assets/signsoflove_reemorton.png" width="100%">
                       <div class="projecttext">
                           <div class="title">Signs of Love</div>
                           <div class="maker">by Ree Morton</div>
@@ -64,7 +72,7 @@
 
               <div class="filterDiv romance craft show" id="entry 02">
                 <a href="#popup2">
-                  <img src="assets/projectbuttontest.jpg" width="100%">
+                  <img src="assets/valentine_estherhowland.png" width="100%">
                   <div class="projecttext">
                       <div class="title">Valentines</div>
                       <div class="maker">by Esther Howland</div>
@@ -75,7 +83,7 @@
 
               <div class="filterDiv romance show" id="entry 03">
                 <a href="#popup3">
-                  <img src="assets/projectbuttontest.jpg" width="100%">
+                  <img src="assets/thewitch_roberteggers.png" width="100%">
                   <div class="projecttext">
                       <div class="title">The Witch</div>
                       <div class="maker">by Robert Eggers</div>
@@ -119,16 +127,22 @@
                     <h2>by Ree Morton</h2>
                   </div>
 
-                  <div class="linktoproject">
-                    Learn more about this project. 	&#2192
-                  </div>
+                  <img src="assets/signsoflove_reemorton.png" width="100%">
 
-                  <h3>Description of project and why I like it</h3>
 
-                  <button class="btn fill">Romance</button>
-                  <button class="btn fill">Craft</button>
+                  <h3>In her piece, Signs of Love, Ree Morton unpacks the motifs of romance, translates them into new form with celastic and explodes them back out into the gallery space. I’m inspired by Morton’s handling of the traditionally ‘feminized’ topic of romantic love, and her attempt to explore, expand, and undercut some of these existing historic notions through materiality and generative transformation.</h3>
 
-             
+                  <div class="linktoproject"><a href="https://whitney.org/collection/works/7436" target="_blank">
+                    Learn more about this project.
+                  </a></div>
+                  <div class="linktoproject"><a href="https://scholarworks.gsu.edu/cgi/viewcontent.cgi?article=1020&context=art_design_facpub" target="_blank">
+                    Read "The Sentimentality of Ree Morton's Signs of Love" by Susan Richmond
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Romance</button>
+                   <button class="btn fill">Craft</button>
+                 </div>
                 </div>
             </div>
 
@@ -136,19 +150,28 @@
               <div class="popup-content">
                   <a href="#" class="close">&times;</a>
                  
+                 
                   <div class="titleof">
                     <h1>Valentines</h1> 
                     <h2>by Esther Howland</h2>
                   </div>
 
-                  <div class="linktoproject">
-                    Learn more about this project. 	&#2192
-                  </div>
+                  <img src="assets/valentine_estherhowland.png" width="100%">
 
-                  <h3>Description of project and why I like it</h3>
 
-                  <button class="btn fill">Romance</button>
-                  <button class="btn fill">Craft</button>
+                  <h3>In her piece, Signs of Love, Ree Morton unpacks the motifs of romance, translates them into new form with celastic and explodes them back out into the gallery space. I’m inspired by Morton’s handling of the traditionally ‘feminized’ topic of romantic love, and her attempt to explore, expand, and undercut some of these existing historic notions through materiality and generative transformation.</h3>
+
+                  <div class="linktoproject"><a href="https://whitney.org/collection/works/7436" target="_blank">
+                    Learn more about this project.
+                  </a></div>
+                  <div class="linktoproject"><a href="https://scholarworks.gsu.edu/cgi/viewcontent.cgi?article=1020&context=art_design_facpub" target="_blank">
+                    Read "The Sentimentality of Ree Morton's Signs of Love" by Susan Richmond
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Romance</button>
+                   <button class="btn fill">Craft</button>
+                 </div>
 
               </div>
             </div>
@@ -161,14 +184,23 @@
                     <h2>by Robert Eggers</h2>
                   </div>
 
-                  <div class="linktoproject">
-                    Learn more about this project. 	&#2192
-                  </div>
+                  <img src="assets/thewitch_roberteggers.png" width="100%">
 
-                  <h3>Description of project and why I like it</h3>
 
-                  <button class="btn fill">Romance</button>
-                  <button class="btn fill">Craft</button>
+                  <h3>In her piece, Signs of Love, Ree Morton unpacks the motifs of romance, translates them into new form with celastic and explodes them back out into the gallery space. I’m inspired by Morton’s handling of the traditionally ‘feminized’ topic of romantic love, and her attempt to explore, expand, and undercut some of these existing historic notions through materiality and generative transformation.</h3>
+
+                  <div class="linktoproject"><a href="https://whitney.org/collection/works/7436" target="_blank">
+                    Learn more about this project.
+                  </a></div>
+                  <div class="linktoproject"><a href="https://scholarworks.gsu.edu/cgi/viewcontent.cgi?article=1020&context=art_design_facpub" target="_blank">
+                    Read "The Sentimentality of Ree Morton's Signs of Love" by Susan Richmond
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Mythology</button>
+                   <button class="btn fill">Craft</button>
+                 </div>
+
 
               </div>
             </div> 
@@ -227,13 +259,12 @@
         <p>Lorem ipsum...</p>
       </div>
 
-    <!-- <button type="button" class="collapsible">Entry 2</button>
-      <div class="content">
-      <p>Lorem ipsum...</p>
-    </div> -->
 
 </div>
 
+<footer>
+  <div>Fall 2023</div>
+</footer>
 
 
 

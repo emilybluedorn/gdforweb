@@ -35,7 +35,6 @@ h1 {
   font-weight: 100;
   margin-top: 0;
   margin-bottom: 1em;
-
 }
 
 h2 {
@@ -87,14 +86,14 @@ a:hover {
     border: solid 1px #6D2C28;
   }
 
-  /* .popups img:hover {
+  .popups img:hover {
     filter: drop-shadow(3px 4px 4px #FFA3F0);
-  } */
+  }
   
   .filterDiv {
     float: left;
     color: #6D2C28;
-    /* width: 33%; */
+    /* width: 33.3%; */
    /*line-height: 100px; */
     text-align: left;
     /* margin: 2px; */
@@ -150,7 +149,7 @@ a:hover {
     width: 50%;
     height:100%;
     filter: drop-shadow(3px 0px 4px #FFA3F0);
-
+    overflow-y: scroll;
 }
 .popup-content p{
     font-size: 17px;
@@ -337,7 +336,7 @@ p {
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  width:50%;
+  width:33.33%;
   float: left;
   border: none;
   outline: none;
@@ -345,7 +344,7 @@ p {
   padding: 14px 16px;
   transition: 0.3s;
   font-family:'arizona';
-  font-size: 32px;
+  font-size: 14px;
   color:#6D2C28;
 }
 
@@ -384,9 +383,28 @@ p {
   display:flex;
 }
 
+.titleof h1 {
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.titleof h2 {
+  font-size:24px;
+}
+
 .linktoproject {
   padding:1em;
   border:solid 1px #6D2C28;
+  margin-bottom:1em;
+}
+
+.linktoproject:hover {
+  background-color: #6D2C28;
+  color:#FFA3F0;
+}
+
+.linktoproject:hover a {
+  color:#FFA3F0;
 }
 
 #essay {
@@ -403,4 +421,8 @@ p {
 
 .headline {
   padding:10px;
+}
+
+.marginbottom {
+  margin-bottom:50px;
 }
