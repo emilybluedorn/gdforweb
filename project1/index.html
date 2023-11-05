@@ -5,7 +5,6 @@
   <title>Project 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -13,17 +12,14 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <!-- this is where all my webpage stuff should go-->
 
   <header>
         <h1>Inheritance?</h1>
-
         <div class="middle">
-          <h2>This website is an ongoing archive of thesis research by me <a href="https://emilybluedorn.com/" target="_blank">(Emily Bluedorn)</a> conducted at RISD in the 2023/2024 school year. Publishing thoughts and discoveries online opens up the conversation to be a more inclusive, collaborative process... so, join me in this exploration!</h2>
+          <h2>This website is an ongoing archive of thesis research by me <a href="https://emilybluedorn.com/" target="_blank">(Emily Bluedorn)</a> conducted at RISD in the 2023/2024 school year. My research centers around _____</h2>
           <br>
          <h2>Reach out to me at emilyellenbluedorn@gmail.com or <a href="https://www.instagram.com/emilyebluedesign/" target="_blank">@emilyebluedesign</a></h2>
         </div>
-
   </header>
 
 
@@ -33,11 +29,11 @@
   <button class="tablinks" onclick="openCity(event, 'Paris')">Thinking & Making</button>
 </div>
 
+
 <!-- Tab content WITH COLLAPSIBLES -->
 <div id="London" class="tabcontent" style="display:block">
 
   <!-- need to put the filterable items here -->
-
 
         <div id="references">
 
@@ -57,7 +53,6 @@
             <div class="popups">
 
               <div class="filterDiv romance craft show" id="entry 01">
-
                   <a href="#popup1">
                       <img src="assets/projectbuttontest.jpg" width="100%">
                       <div class="projecttext">
@@ -68,36 +63,47 @@
               </div>
 
               <div class="filterDiv romance craft show" id="entry 02">
-
                 <a href="#popup2">
-                    <img src="assets/craft.jpg" width="100%">
-                    <div><i>Craft Reader,</i> Esther Howland</div>
+                  <img src="assets/projectbuttontest.jpg" width="100%">
+                  <div class="projecttext">
+                      <div class="title">Valentines</div>
+                      <div class="maker">by Esther Howland</div>
+                  </div>
                 </a>
               </div>
 
 
               <div class="filterDiv romance show" id="entry 03">
-
                 <a href="#popup3">
-                    <img src="assets/witch.jpg" width="100%">
-                    <div><i>The Witch,</i> Robert Eggars</div>
+                  <img src="assets/projectbuttontest.jpg" width="100%">
+                  <div class="projecttext">
+                      <div class="title">The Witch</div>
+                      <div class="maker">by Robert Eggers</div>
+                  </div>
                 </a>
               </div>
 
 
-              <div class="filterDiv romance show" id="entry 04">
-
+              <div class="filterDiv romance sentiment show" id="entry 04">
                 <a href="#popup4">
-                    <img src="assets/witch.jpg" width="100%">
-                    <div><i>The Witch,</i> Robert Eggars</div>
+                  <img src="assets/projectbuttontest.jpg" width="100%">
+                  <div class="projecttext">
+                      <div class="title">How to Live on Love</div>
+                      <div class="maker">by Elizabeth Goodspeed</div>
+                  </div>
                 </a>
               </div>
 
-              <div class="filterDiv mythology sentiment show">broom</div>
+              <div class="filterDiv mythology craft show">
+                <a href="#popup5">
+                  <img src="assets/projectbuttontest.jpg" width="100%">
+                  <div class="projecttext">
+                      <div class="title">Requiem Portraits</div>
+                      <div class="maker">by Barbara Broughel</div>
+                  </div>
+                </a>
+              </div>
 
-              <div class="filterDiv romance show">Elizabeth's Project</div>
-
-              <div class="filterDiv mythology show">the witch</div>
 
             </div>
 
@@ -129,20 +135,81 @@
             <div id="popup2" class="popup-container">
               <div class="popup-content">
                   <a href="#" class="close">&times;</a>
-                  <h1>Craft Reader</h1> 
-                  <h2>by </h2>
-                  <img src="assets/signsoflove.jpeg" width="100%">
-                  <h3>Craft reader description test</h3>
+                 
+                  <div class="titleof">
+                    <h1>Valentines</h1> 
+                    <h2>by Esther Howland</h2>
+                  </div>
+
+                  <div class="linktoproject">
+                    Learn more about this project. 	&#2192
+                  </div>
+
+                  <h3>Description of project and why I like it</h3>
+
+                  <button class="btn fill">Romance</button>
+                  <button class="btn fill">Craft</button>
+
               </div>
             </div>
 
             <div id="popup3" class="popup-container">
               <div class="popup-content">
                   <a href="#" class="close">&times;</a>
-                  <h1>The Witch</h1> 
-                  <h2>by </h2>
-                  <img src="assets/signsoflove.jpeg" width="100%">
-                  <h3>Robert Eggarst</h3>
+                  <div class="titleof">
+                    <h1>The Witch</h1> 
+                    <h2>by Robert Eggers</h2>
+                  </div>
+
+                  <div class="linktoproject">
+                    Learn more about this project. 	&#2192
+                  </div>
+
+                  <h3>Description of project and why I like it</h3>
+
+                  <button class="btn fill">Romance</button>
+                  <button class="btn fill">Craft</button>
+
+              </div>
+            </div> 
+
+            <div id="popup4" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                  <div class="titleof">
+                    <h1>How to Live on Love</h1> 
+                    <h2>by Elizabeth Goodspeed</h2>
+                  </div>
+
+                  <div class="linktoproject">
+                    Learn more about this project. 	&#2192
+                  </div>
+
+                  <h3>Description of project and why I like it</h3>
+
+                  <button class="btn fill">Romance</button>
+                  <button class="btn fill">Craft</button>
+
+              </div>
+            </div> 
+
+            <div id="popup5" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                  <div class="titleof">
+                    <h1>Requiem Portraits</h1> 
+                    <h2>by Barbara Broughel</h2>
+                  </div>
+
+                  <div class="linktoproject">
+                    Learn more about this project. 	&#2192
+                  </div>
+
+                  <h3>Description of project and why I like it</h3>
+
+                  <button class="btn fill">Romance</button>
+                  <button class="btn fill">Craft</button>
+
               </div>
             </div> 
 
