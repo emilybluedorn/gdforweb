@@ -31,10 +31,10 @@ header {
 
 
 h1 {
-  font-size: 4.5vw;
+  font-size: 24px;
   font-weight: 100;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 
 }
 
@@ -87,9 +87,9 @@ a:hover {
     border: solid 1px #6D2C28;
   }
 
-  .popups img:hover {
+  /* .popups img:hover {
     filter: drop-shadow(3px 4px 4px #FFA3F0);
-  }
+  } */
   
   .filterDiv {
     float: left;
@@ -285,6 +285,13 @@ p {
     color: #6D2C28;
   }
 
+.fill {
+    background-color: #FFA3F0;
+    cursor:default;
+  }
+
+
+
 
 
 
@@ -295,8 +302,6 @@ p {
   background-color: #eee;
   color:#6D2C28;
   cursor: pointer;
-  padding-top: 40px;
-  padding-bottom:20px;
   width: 100%;
   border:none;
   border-bottom:solid 1px #6D2C28;
@@ -363,11 +368,39 @@ p {
 }
 
 .projecttext, .projecttext p {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr; */
-  font-size: 14px;
-  font-family:'arizonasans';
+  font-size: 16px;
+  font-family:'arizona';
   color:#6D2C28;
+  display: flex;
+  margin-top:5px;
 }
 
+.title {
+  margin-right:5px;
+  font-style: italic;
+}
 
+.titleof {
+  display:flex;
+}
+
+.linktoproject {
+  padding:1em;
+  border:solid 1px #6D2C28;
+}
+
+#essay {
+  display:flex;
+  justify-content: space-between;
+  padding:20px;
+}
+
+.number {
+  padding:10px;
+  border-radius: 80%;
+  border: solid 1px #6D2C28;
+}
+
+.headline {
+  padding:10px;
+}
