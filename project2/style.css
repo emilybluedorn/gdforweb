@@ -340,6 +340,15 @@ div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-w
   background:none;
 }
 
+form {
+  font-family: "odile";
+  color:#535A6F;
+}
+
+.print {
+  font-family:"odile";
+  color:#535A6F;
+}
 
 
 
@@ -360,5 +369,24 @@ div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-w
   .col2 {
     display:none;
   }
+}
+
+@media print {
+  .col3 {
+    display:none;
+  }
+
+  header, footer, .accordion-wrapper {
+    display:none;
+  }
+
+  .col2 {
+    border:none;
+  }
+
+  .col2 p {
+    display:none;
+  }
+
 
 }
