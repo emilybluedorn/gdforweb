@@ -331,7 +331,7 @@ cursor: pointer;
   text-align: center;
 }
 
-.ui-widget-content {
+div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle {
   border:none;
   background:none;
 }
