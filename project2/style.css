@@ -374,8 +374,33 @@ form {
   z-index: 2;
 }
 
+.symbolgrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: solid 1px #399A75;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  background-color: #399A75;
+}
 
+.item {
+  background-color:#FAF4F2;
+  width:100%;
+}
 
+/* 
+.symbolexplainerone {
+  display:none;
+}
+.symbolgrid:hover .symbolexplainerone {
+  color:red;
+  display:block;
+}
+
+.stickers#draggable:hover {
+  border:red solid 1px;
+}
+ */
 
 @media only screen and (max-width:801px) {
   .description {
