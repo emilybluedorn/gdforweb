@@ -375,6 +375,8 @@ form {
 }
 
 
+
+
 @media only screen and (max-width:801px) {
   .description {
     font-size: calc(15px + 3vw);
