@@ -313,6 +313,8 @@ cursor: pointer;
 .stickers {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background:none;
+  border:none;
 }
 
 .stickers img:hover {
