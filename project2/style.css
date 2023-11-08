@@ -163,40 +163,39 @@ div#color\ pink, div#color\ green, div#color\ navy, div#color\ gold {
 }
 
 div#color\ pink {
-  background-color: #F5989E;
+  background-color: #FAC5CE;
 }
 
 div#color\ green {
-  background-color: #399A75;
+  background-color: #8FD0B2;
 }
 
 div#color\ navy {
-  background-color: #394B5A;
+  background-color: #8798BA;
 }
 
 div#color\ gold {
-  background-color: #AC936E;
+  background-color: #DFC4A0;
 }
 
 .test {
-  fill: #F5989E;
+  fill: #FAC5CE;
 }
 
 .cls-2 {
-  fill: #F5989E;
-  width: 100%;
+  fill: #FAC5CE;
 }
 
 .cls-3 {
-  fill: #399A75;
+  fill: #8FD0B2;
 }
 
 .cls-4 {
-  fill: #394B5A;
+  fill: #8798BA;
 }
 
 .cls-5 {
-  fill: #AC936E;
+  fill: #DFC4A0;
 }
 
 button.clr {
