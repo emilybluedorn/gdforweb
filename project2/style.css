@@ -350,6 +350,29 @@ form {
   color:#535A6F;
 }
 
+#information h2 {
+  position:relative;
+  cursor:pointer;
+}
+
+.infotext {
+  display:none;
+}
+
+#information:hover .infotext {
+  display:block;
+  position:fixed;
+  top:2em;
+  right:3em;
+  background-color:#FAC5CE;
+  width:20%;
+  text-align:left;
+  font-family: "odile";
+  color:#535A6F;
+  padding:1em;
+  font-size: calc(9px + .5vw);
+  z-index: 2;
+}
 
 
 @media only screen and (max-width:801px) {
@@ -360,7 +383,44 @@ form {
   .columns {
     grid-template-columns: 1fr;
   }
+
+  header {
+    display:block;
+    text-align: center;
+  }
+
+  .information {
+    display:block;
+    text-align:center;
+  }
+
+  #information h2 {
+    position:relative;
+    cursor:pointer;
+  }
   
+  .infotext {
+    display:block;
+    color:#535A6F;
+    font-family: "odile";
+    margin-top:1em;
+  }
+  
+  #information:hover .infotext {
+    display:none;
+  }
+  
+  #datetime {
+    display:none;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    display:none;
+  }
   
 }
 
