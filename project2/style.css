@@ -339,3 +339,24 @@ div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-w
   border:none;
   background:none;
 }
+
+
+
+
+@media only screen and (max-width:801px) {
+  .description {
+    font-size: calc(15px + 3vw);
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  
+  
+}
+
+@media only screen and (max-width:600px) {
+
+
+}
