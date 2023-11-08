@@ -37,7 +37,7 @@ p {
   margin:inherit;
   border-bottom:solid 1px #535A6F;
   font-family: "odile";
-  color:#535A6F;
+  color:#535A6F
 }
 
 #Layer_1 {
@@ -335,7 +335,7 @@ cursor: pointer;
   text-align: center;
 }
 
-div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle {
+div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-widget-content.ui-draggable.ui-draggable-handle {
   border:none;
   background:none;
 }
