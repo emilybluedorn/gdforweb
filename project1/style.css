@@ -338,9 +338,10 @@ a:hover {
   padding: 14px 16px;
   transition: 0.3s;
   font-family:'arizona';
-  font-size: 14px;
+  font-size: calc(12px + 1vw);
   color:#6D2C28;
 }
+
 
 /* Change background color of buttons on hover */
 .tab button:hover {
@@ -436,5 +437,56 @@ font-size: 24px;
 }
 
 .description {
-  font-size: 24px;
+  font-size: calc(15px + 3vw);
+  position:fixed;
+  bottom:0;
+  padding-bottom:3%;
+  padding-right:5%;
+  z-index: -1;
 }
+
+.description a {
+  color:#FFA3F0;
+}
+
+#line {
+  border-right: solid 1px #6D2C28;
+}
+
+@media only screen and (max-width:801px) {
+  .description {
+    font-size: calc(15px + 3vw);
+  }
+
+  .popups {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  
+}
+
+@media only screen and (max-width:600px) {
+  .description {
+    font-size: calc(15px + 3vw);
+  }
+
+  .popups {
+    grid-template-columns: 1fr;
+  }
+
+  .tab button {
+    width:100%;
+  }
+
+  #line {
+    border-right: none;
+    border-bottom: solid 1px #6D2C28;
+  }
+
+  .popup-content {
+    background-color: #d9d9d993;
+    width: 100%;
+}
+
+}
+
