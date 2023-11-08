@@ -141,8 +141,8 @@ body {
   font-family: "odile";
   font-size: 20px;
   color: #535A6F;
-  display: grid;
-  grid-column: 1fr 1fr;
+  /* display: grid;
+  grid-column: 1fr 1fr; */
 }
 
 span#color {
@@ -351,12 +351,14 @@ div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-w
   .columns {
     grid-template-columns: 1fr;
   }
-
   
   
 }
 
 @media only screen and (max-width:600px) {
 
+  .col2 {
+    display:none;
+  }
 
 }
