@@ -423,11 +423,6 @@ a:hover {
 }
 
 
-.content p {
-  font-size: 12;
-  color:#6D2C28;
-}
-
 p {
 margin:0px;
 padding-top:20px;
@@ -451,6 +446,23 @@ font-size: 24px;
 
 #line {
   border-right: solid 1px #6D2C28;
+}
+
+.article {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.writing {
+  font-family:'arizonasans';
+  font-weight: 100;
+  font-size:14px;
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 12;
+  color:#6D2C28;
 }
 
 @media only screen and (max-width:801px) {
