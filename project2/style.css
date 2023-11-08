@@ -334,7 +334,7 @@ cursor: pointer;
   text-align: center;
 }
 
-div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-widget-content.ui-draggable.ui-draggable-handle {
+div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag3.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag4.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag5.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag6.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag7.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag8.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag9.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag10.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag11.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag12.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag13.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag14.ui-widget-content.ui-draggable.ui-draggable-handle {
   border:none;
   background:none;
 }
