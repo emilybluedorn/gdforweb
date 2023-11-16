@@ -52,10 +52,17 @@
           <!-- filterable information! -->
           <div id="myBtnContainer">
               <button class="btn" onclick="filterSelection('all')"> Show all</button>
-              <button class="btn"  onclick="filterSelection('romance')"> Romance</button>
+              <button class="btn" onclick="filterSelection('craft')"> Craft</button>
+              <button class="btn" onclick="filterSelection('inheritance')"> Inheritance</button>
+              <button class="btn" onclick="filterSelection('intimacy')"> Intimacy</button>
               <button class="btn" onclick="filterSelection('mythology')"> Mythology</button>
+              <button class="btn"  onclick="filterSelection('romance')"> Romance</button>
               <button class="btn" onclick="filterSelection('sentiment')"> Sentiment</button>
-              <button class="btn" onclick="filterSelection('craft')"> craft</button>
+              <button class="btn" onclick="filterSelection('tension')"> Tension</button>
+              <button class="btn" onclick="filterSelection('wonder')"> Wonder</button>
+
+
+
 
             </div>
 
@@ -64,7 +71,7 @@
             <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
             <div class="popups">
 
-              <div class="filterDiv romance craft show" id="entry 01">
+              <div class="filterDiv craft inheritance mythology romance sentiment show" id="entry 01">
                   <a href="#popup1">
                       <img src="assets/signsoflove_reemorton.png" width="100%">
                       <div class="projecttext">
@@ -74,7 +81,7 @@
                   </a>
               </div>
 
-              <div class="filterDiv romance craft show" id="entry 02">
+              <div class="filterDiv craft inheritance mythology romance sentiment wonder show" id="entry 02">
                 <a href="#popup2">
                   <img src="assets/valentine_estherhowland.png" width="100%">
                   <div class="projecttext">
@@ -85,7 +92,7 @@
               </div>
 
 
-              <div class="filterDiv romance show" id="entry 03">
+              <div class="filterDiv craft inheritance mythology tension show" id="entry 03">
                 <a href="#popup3">
                   <img src="assets/thewitch_roberteggers.png" width="100%">
                   <div class="projecttext">
@@ -96,7 +103,7 @@
               </div>
 
 
-              <div class="filterDiv romance sentiment show" id="entry 04">
+              <div class="filterDiv craft inheritance intimacy mythology romance sentiment wonder show" id="entry 04">
                 <a href="#popup4">
                   <img src="assets/howtoliveonlove_elizabethgoodspeed.png" width="100%">
                   <div class="projecttext">
@@ -106,12 +113,63 @@
                 </a>
               </div>
 
-              <div class="filterDiv mythology craft show">
+              <div class="filterDiv craft intimacy mythology show">
                 <a href="#popup5">
                   <img src="assets/requiemportraits_barbarabroughel.png" width="100%">
                   <div class="projecttext">
                       <div class="title">Requiem Portraits</div>
                       <div class="maker">by Barbara Broughel</div>
+                  </div>
+                </a>
+              </div>
+
+
+              <div class="filterDiv craft inheritance tension show">
+                <a href="#popup6">
+                  <img src="assets/UnpolishedLegacies.png" width="100%">
+                  <div class="projecttext">
+                      <div class="title">Unpolished Legacies</div>
+                      <div class="maker">by Holly Ewald & Becci Davis</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="filterDiv inheritance tension wonder show">
+                <a href="#popup7">
+                  <img src="assets/RoseGold_SarahCwynar.png" width="100%">
+                  <div class="projecttext">
+                      <div class="title">Rose Gold</div>
+                      <div class="maker">by Sarah Cwynar</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="filterDiv craft inheritance craft show">
+                <a href="#popup8">
+                  <img src="assets/AQueerYearofLoveLetters_NatPyper.png" width="100%">
+                  <div class="projecttext">
+                      <div class="title">A Queer Year of Love Letters</div>
+                      <div class="maker">by Nat Pyper</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="filterDiv craft inheritance intimacy mythology show">
+                <a href="#popup9">
+                  <img src="assets/CommonThreadsPress.png" width="100%">
+                  <div class="projecttext">
+                      <div class="title">Common Threads Press</div>
+                      <div class="maker">by Laura Moseley</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="filterDiv inheritance tension show">
+                <a href="#popup10">
+                  <img src="assets/MayYouLiveinInterestingTimes_SlavsandTatars.png" width="100%">
+                  <div class="projecttext">
+                      <div class="title">May You Live in Interesting Times</div>
+                      <div class="maker">by Slavs and Tatars</div>
                   </div>
                 </a>
               </div>
@@ -144,8 +202,10 @@
                   </a></div>
 
                   <div class="marginbottom">
-                   <button class="btn fill">Romance</button>
                    <button class="btn fill">Craft</button>
+                   <button class="btn fill">Romance</button>
+                   <button class="btn fill">Intimacy</button>
+                   <button class="btn fill">Tension</button>
                  </div>
                 </div>
             </div>
@@ -268,6 +328,167 @@
                  </div>
               </div>
             </div> 
+
+            <div id="popup6" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                 
+                 
+                  <div class="titleof">
+                    <h1>Unpolished Legacies</h1> 
+                    <h2>by Holly Ewald and Becci Davis</h2>
+                  </div>
+
+                  <img src="assets/UnpolishedLegacies.png" width="100%">
+
+
+                  <h3>Esther Howland’s valentines are a remarkable collision of industrial production and hand-craft. Each valentine features symbolically rich motifs of historic romantic lore, and also delicately cut lace paper as a testament to printing innovation of the time. I’m also drawn to them for their excessive flourishes, and exaggerated sentimentality. They’re delightfully absurd and unabashed in their frilliness. In A History of Valentines, written by Ruth Web Lee in 1952, the author states: “The wheels of the machine age are vastly more rapid than girlish hands but the charm provided by the human touch has gone,” when describing the charm of heritage valentines. I’m interested in how design can be marked by girlish hands, and how that can be celebrated rather than dismissed as silly or saccharine.</h3>
+
+                  <div class="linktoproject"><a href="ii.	https://www.mtholyoke.edu/directory/alum/esther-howland" target="_blank">
+                    Learn more about Esther Howland.
+                  </a></div>
+                  <div class="linktoproject"><a href="d.	https://www.metmuseum.org/art/collection/search/719802 " target="_blank">
+                    View more of the valentines online.
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Craft</button>
+                   <button class="btn fill">Inheritance</button>
+                   <button class="btn fill">Tension</button>
+                   <button class="btn fill">Translation</button>
+                 </div>
+
+              </div>
+            </div>
+
+
+            <div id="popup7" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                 
+                 
+                  <div class="titleof">
+                    <h1>Rose Gold</h1> 
+                    <h2>by Sarah Cwynar</h2>
+                  </div>
+
+                  <img src="assets/RoseGold_SarahCwynar.png" width="100%">
+
+
+                  <h3>Esther Howland’s valentines are a remarkable collision of industrial production and hand-craft. Each valentine features symbolically rich motifs of historic romantic lore, and also delicately cut lace paper as a testament to printing innovation of the time. I’m also drawn to them for their excessive flourishes, and exaggerated sentimentality. They’re delightfully absurd and unabashed in their frilliness. In A History of Valentines, written by Ruth Web Lee in 1952, the author states: “The wheels of the machine age are vastly more rapid than girlish hands but the charm provided by the human touch has gone,” when describing the charm of heritage valentines. I’m interested in how design can be marked by girlish hands, and how that can be celebrated rather than dismissed as silly or saccharine.</h3>
+
+                  <div class="linktoproject"><a href="ii.	https://www.mtholyoke.edu/directory/alum/esther-howland" target="_blank">
+                    Learn more about Esther Howland.
+                  </a></div>
+                  <div class="linktoproject"><a href="d.	https://www.metmuseum.org/art/collection/search/719802 " target="_blank">
+                    View more of the valentines online.
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Craft</button>
+                   <button class="btn fill">Inheritance</button>
+                   <button class="btn fill">Tension</button>
+                   <button class="btn fill">Translation</button>
+                 </div>
+
+              </div>
+            </div>
+
+            <div id="popup8" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                 
+                 
+                  <div class="titleof">
+                    <h1>A Queer Year of Love Letters</h1> 
+                    <h2>by Nat Pyper</h2>
+                  </div>
+
+                  <img src="assets/AQueerYearofLoveLetters_NatPyper.png" width="100%">
+
+
+                  <h3>Esther Howland’s valentines are a remarkable collision of industrial production and hand-craft. Each valentine features symbolically rich motifs of historic romantic lore, and also delicately cut lace paper as a testament to printing innovation of the time. I’m also drawn to them for their excessive flourishes, and exaggerated sentimentality. They’re delightfully absurd and unabashed in their frilliness. In A History of Valentines, written by Ruth Web Lee in 1952, the author states: “The wheels of the machine age are vastly more rapid than girlish hands but the charm provided by the human touch has gone,” when describing the charm of heritage valentines. I’m interested in how design can be marked by girlish hands, and how that can be celebrated rather than dismissed as silly or saccharine.</h3>
+
+                  <div class="linktoproject"><a href="ii.	https://www.mtholyoke.edu/directory/alum/esther-howland" target="_blank">
+                    Learn more about Esther Howland.
+                  </a></div>
+                  <div class="linktoproject"><a href="d.	https://www.metmuseum.org/art/collection/search/719802 " target="_blank">
+                    View more of the valentines online.
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Craft</button>
+                   <button class="btn fill">Inheritance</button>
+                   <button class="btn fill">Tension</button>
+                   <button class="btn fill">Translation</button>
+                 </div>
+
+              </div>
+            </div>
+
+            <div id="popup9" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                 
+                 
+                  <div class="titleof">
+                    <h1>Common Threads</h1> 
+                    <h2>by Laura Moseley</h2>
+                  </div>
+
+                  <img src="assets/CommonThreadsPress.png" width="100%">
+
+
+                  <h3>Esther Howland’s valentines are a remarkable collision of industrial production and hand-craft. Each valentine features symbolically rich motifs of historic romantic lore, and also delicately cut lace paper as a testament to printing innovation of the time. I’m also drawn to them for their excessive flourishes, and exaggerated sentimentality. They’re delightfully absurd and unabashed in their frilliness. In A History of Valentines, written by Ruth Web Lee in 1952, the author states: “The wheels of the machine age are vastly more rapid than girlish hands but the charm provided by the human touch has gone,” when describing the charm of heritage valentines. I’m interested in how design can be marked by girlish hands, and how that can be celebrated rather than dismissed as silly or saccharine.</h3>
+
+                  <div class="linktoproject"><a href="ii.	https://www.mtholyoke.edu/directory/alum/esther-howland" target="_blank">
+                    Learn more about Esther Howland.
+                  </a></div>
+                  <div class="linktoproject"><a href="d.	https://www.metmuseum.org/art/collection/search/719802 " target="_blank">
+                    View more of the valentines online.
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Craft</button>
+                   <button class="btn fill">Inheritance</button>
+                   <button class="btn fill">Tension</button>
+                   <button class="btn fill">Translation</button>
+                 </div>
+
+              </div>
+            </div>
+
+            <div id="popup10" class="popup-container">
+              <div class="popup-content">
+                  <a href="#" class="close">&times;</a>
+                 
+                 
+                  <div class="titleof">
+                    <h1>May You Live in Interesting Times</h1> 
+                    <h2>by Slavs and Tatars</h2>
+                  </div>
+
+                  <img src="assets/MayYouLiveinInterestingTimes_SlavsandTatars.png" width="100%">
+
+
+                  <h3>Esther Howland’s valentines are a remarkable collision of industrial production and hand-craft. Each valentine features symbolically rich motifs of historic romantic lore, and also delicately cut lace paper as a testament to printing innovation of the time. I’m also drawn to them for their excessive flourishes, and exaggerated sentimentality. They’re delightfully absurd and unabashed in their frilliness. In A History of Valentines, written by Ruth Web Lee in 1952, the author states: “The wheels of the machine age are vastly more rapid than girlish hands but the charm provided by the human touch has gone,” when describing the charm of heritage valentines. I’m interested in how design can be marked by girlish hands, and how that can be celebrated rather than dismissed as silly or saccharine.</h3>
+
+                  <div class="linktoproject"><a href="ii.	https://www.mtholyoke.edu/directory/alum/esther-howland" target="_blank">
+                    Learn more about Esther Howland.
+                  </a></div>
+                  <div class="linktoproject"><a href="d.	https://www.metmuseum.org/art/collection/search/719802 " target="_blank">
+                    View more of the valentines online.
+                  </a></div>
+
+                  <div class="marginbottom">
+                   <button class="btn fill">Craft</button>
+                   <button class="btn fill">Inheritance</button>
+                   <button class="btn fill">Tension</button>
+                   <button class="btn fill">Translation</button>
+                 </div>
+
+              </div>
+            </div>
 
         </div>
 
