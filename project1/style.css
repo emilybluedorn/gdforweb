@@ -30,6 +30,10 @@ header {
   text-align: center;
 }
 
+h3 {
+  line-height: 1.5;
+}
+
 
 h1 {
   font-size: 24px;
