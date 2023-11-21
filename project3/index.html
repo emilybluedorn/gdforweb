@@ -14,11 +14,11 @@
 <body>
 
   <header>
-    <div>Fleuron Type &#10047;</div>
-    <div class="check-box">
+    <h1>Fleuron Type &#10047;</h1>
+    <h1 class="check-box">
       <input onclick="myFunction()" type="checkbox">
-    </div>
-    <div>Info</div>
+    </h1>
+    <h1>Info</h1>
   </header>
 
 
@@ -28,21 +28,63 @@
         <div class="left">
           <div id="title">Household Management</div>
           <div id="weight">Weight</div>
-          <div id="size">Size</div>
+          <div class="font-range">
+            <input type="range" id="range" value="15" min="15" max="50" />
+          </div>
         </div>
         <div class="right">
           <div>Download</div>
         </div>
       </div>
-      <p>This is Household Management.</p>
     </div>
 
 
   </div>
 
 
+  <!-- attempted size -->
+
+  <div class="txt">
+    <div class="font"></div>
+    <div class="BIG">
+      This is Household Management
+    </div>
+  </div>
 
   
+  <script>
+
+var range = document.getElementById("range");
+var body = document.body;
+var font = document.querySelector(".txt .font");
+
+checkFontSize();
+
+range.oninput = function () {
+  console.log(this.values);
+  body.style.setProperty("font-size", this.value + "px");
+  window.localStorage.setItem("fontSize", this.value + "px");
+  window.localStorage.setItem("range", this.value);
+  font.innerHTML = "<p>font-size is :" + "<b>" + this.value + "px";
+};
+
+function checkFontSize() {
+  var fontSize = window.localStorage.getItem("fontSize");
+  var rangeValue = window.localStorage.getItem("range");
+
+  if (fontSize !== null) {
+    body.style.setProperty("font-size", fontSize);
+    range.value = rangeValue;
+    font.innerHTML = "font-size is : " + "<b>" + fontSize;
+  } else {
+    body.style.setProperty("font-size", "15px");
+    range.value = 15;
+    font.innerHTML = "font-size is : " + "<b>" + range.value + "px";
+  }
+
+}
+
+  </script>
 
 
 </body>
