@@ -85,17 +85,25 @@ input:checked[type="checkbox"]::after {
 
 .adjustments, .left{
   display:flex;
-  justify-content: space-between;
+}
+
+.left {
+  width:90%;
 }
 
 .adjustments {
   font-size:16px;
   padding-top:.5em;
+  padding-bottom:2em;
+  justify-content: space-between;
+}
+
+#title {
+  width:60%;
 }
 
 #title, #weight, #size {
-  margin-right:3em;
-  padding:8px;
+
 }
 
 #weight {
@@ -115,10 +123,10 @@ p {
   width: 50%;
   box-sizing: border-box;
   margin: auto;
+  padding-right:1em;
 }
 #range {
   width: 100%;
-  padding: 10px 0;
 }
 .txt {
   box-sizing: border-box;
