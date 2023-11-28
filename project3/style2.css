@@ -8,6 +8,17 @@
 	font-family: "arizonasans";
 }
 
+@font-face {
+	src: url("assets/household-Regular.woff") format("opentype");
+	font-family: "household";
+}
+
+.opener {
+  font-family: 'household';
+  text-align: center;
+  padding-top:50%;
+}
+
 a {
   text-decoration:none;
   color:gray;
@@ -22,15 +33,16 @@ h1 {
 }
 
 body {
-  background-color:#FFEBEB;
+  background-color:#141940;
+  color:#fdf1d3;
   padding:25px;
   font-size:24px;
   font-family: "Inter", sans-serif;
 }
 
 .dark-mode {
-  background-color:black;
-  color:white;
+  background-color:#fdf1d3;
+  color:#141940;
 }
 
 header {
@@ -47,7 +59,7 @@ input[type="checkbox"] {
     appearance: none;
     width: 20px;
     height: 10px;
-    background: black;
+    background: #fdf1d3;
     /* border: solid 1px black; */
     border-radius: 50px;
     /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
@@ -56,7 +68,7 @@ input[type="checkbox"] {
 }
 
 input:checked[type="checkbox"] {
-    background: white;
+    background: #141940;
     /* border: solid 1px white; */
 }
 
