@@ -44,10 +44,17 @@
 
   <!-- attempted size -->
 
-  <div class="txt">
+  <!-- <div class="txt">
     <div class="font"></div>
     <div class="BIG">
       This is Household Management
+    </div>
+  </div> -->
+
+  <div class="txt" id="editor-body">
+    <div class="font"></div>
+    <div id="editor-content" class="BIG">
+      Content Editor
     </div>
   </div>
 
@@ -83,6 +90,13 @@ function checkFontSize() {
   }
 
 }
+
+var editable = document.getElementById("editor-content");
+
+
+  if (!editable.isContentEditable) {
+    editable.contentEditable = "true";
+  };
 
   </script>
 
