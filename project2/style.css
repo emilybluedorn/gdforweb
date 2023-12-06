@@ -35,9 +35,9 @@ p {
   background-color:#D9D9D9;
   padding:2%;
   margin:inherit;
-  border-bottom:solid 1px #535A6F;
+  border-bottom:solid 1px #0678BE;
   font-family: "odile";
-  color:#535A6F
+  color:#0678BE;
 }
 
 #Layer_1 {
@@ -46,21 +46,21 @@ p {
 }
 
 .col2, .col3 {
-  border:solid 1px #535A6F;
+  border:solid 1px #0678BE;
 }
 
 .lace {
-  border:solid 1px #535A6F;
+  border:solid 1px #0678BE;
   padding:.5em;
   border-radius:100%;
   margin-top:1em;
   margin-bottom:1em;
   font-family: "odile";
-  color:#535A6F;
+  color:#0678BE;
 }
 
 .title {
-  border-top:solid 1px #535A6F;
+  border-top:solid 1px #0678BE;
 }
 
 #color {
@@ -92,7 +92,7 @@ h1 {
   margin: 0;
   font-size: 28px;
   font-family: "odile-deco-initials";
-  color: #535A6F;
+  color: #0678BE;
   font-weight: lighter;
 }
 
@@ -100,7 +100,7 @@ h2 {
   margin:0;
   font-size: 28px;
   font-family: "odile";
-  color: #535A6F;
+  color: #0678BE;
   font-weight: lighter;
   margin-left: 2rem;
   text-align: right;
@@ -121,7 +121,7 @@ body {
 .btn-wrapper button {
   font-family: "odile";
   font-size: 20px;
-  background: #535A6F;
+  background: #0678BE;
   color: #FAF4F2;
   width: 100%;
   padding: 15px 30px;
@@ -133,14 +133,14 @@ body {
 #upperborder {
   width:100%;
   height:1px;
-  background-color:#535A6F;
+  background-color:#0678BE;
   margin-bottom:3%;
 }
 
 .collapsing-div {
   font-family: "odile";
   font-size: 20px;
-  color: #535A6F;
+  color: #0678BE;
   /* display: grid;
   grid-column: 1fr 1fr; */
 }
@@ -163,39 +163,39 @@ div#color\ pink, div#color\ green, div#color\ navy, div#color\ gold {
 }
 
 div#color\ pink {
-  background-color: #FAC5CE;
+  background-color: #E99DC5;
 }
 
 div#color\ green {
-  background-color: #8FD0B2;
+  background-color: #76B896;
 }
 
 div#color\ navy {
-  background-color: #8798BA;
+  background-color: #79A6BC;
 }
 
 div#color\ gold {
-  background-color: #DFC4A0;
+  background-color: #AAA297;
 }
 
 .test {
-  fill: #FAC5CE;
+  fill: #E99DC5;
 }
 
 .cls-2 {
-  fill: #FAC5CE;
+  fill: #E99DC5;
 }
 
 .cls-3 {
-  fill: #8FD0B2;
+  fill: #76B896;
 }
 
 .cls-4 {
-  fill: #8798BA;
+  fill: #79A6BC;
 }
 
 .cls-5 {
-  fill: #DFC4A0;
+  fill: #AAA297;
 }
 
 button.clr {
@@ -215,7 +215,7 @@ button.clr {
 .active,
 .clr:hover {
   /* color: white; */
-  border:solid 1px #535A6F;
+  border:solid 1px #0678BE;
   /* border-radius: 5%; */
 }
 
@@ -267,7 +267,7 @@ footer {
   padding-bottom:2em;
   font-family: "odile";
   font-size: 16px;
-  color: #535A6F;
+  color: #0678BE;
 }
 
 .credits {
@@ -280,7 +280,7 @@ button.green {
 }
 
 button.pink {
-  background-color:#F5989E;
+  background-color:#E99DC5;
 }
 
 button.gold {
@@ -303,12 +303,12 @@ button.gold {
 /* PRINT */
 
 .print {
-  outline: solid 1px #535A6F;
+  outline: solid 1px #0678BE;
   padding:20px;
 }
 
 .print:hover {
-background-color: #535A6F;
+background-color: #0678BE;
 color:antiquewhite;
 cursor: pointer;
 }
@@ -326,10 +326,11 @@ cursor: pointer;
 
 
 #guests {
-  color:#393f52;
+  color:#FAF4F2;
   position:absolute;
   top:50%;
   left:50%;
+  width:30%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-family: "odile-deco-initials";
@@ -342,12 +343,12 @@ div#draggable.ui-widget-content.ui-draggable.ui-draggable-handle, div#drag2.ui-w
 
 form {
   font-family: "odile";
-  color:#535A6F;
+  color:#0678BE;
 }
 
 .print {
   font-family:"odile";
-  color:#535A6F;
+  color:#0678BE;
 }
 
 #information h2 {
@@ -363,12 +364,13 @@ form {
   display:block;
   position:fixed;
   top:2em;
-  right:3em;
-  background-color:#FAC5CE;
+  right:2em;
+  background-color:#FAF4F2;
+  border: solid #0678BE 1px;
   width:20%;
   text-align:left;
   font-family: "odile";
-  color:#535A6F;
+  color:#0678BE;
   padding:1em;
   font-size: calc(9px + .5vw);
   z-index: 2;
@@ -428,7 +430,7 @@ form {
   
   .infotext {
     display:block;
-    color:#535A6F;
+    color:#0678BE;
     font-family: "odile";
     margin-top:1em;
   }
