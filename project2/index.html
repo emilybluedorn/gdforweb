@@ -7,8 +7,6 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/miy7ftn.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
-  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -72,6 +70,7 @@
       </div>
     </div>
 
+    <!-- dragging functionality codepen reference https://codepen.io/pistell/pen/XWWdZrv James Pistell -->
     <div class="col2">
       <p>Draggable stickers:</p>
       <div class="stickers">
@@ -130,6 +129,7 @@
           <button class="clr" onclick="changeClass_5()" data-number="5"><div id="color gold"></div></button>
       </span>
       <p class="title">Lace Pattern:</p>
+      <!-- button function codepen https://codepen.io/ohmiler/pen/xeEVdV -->
       <span id="doily">
         <button class="lace" onClick="FirstImage()">01</button>
         <button class="lace" onClick="SecondImage()">02</button>
@@ -236,7 +236,7 @@
 
 
   
-  // For COLLAPSIBLES
+  // codepen reference https://codepen.io/sunny_thakor/pen/NWoKWVM 
 
   var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -268,55 +268,6 @@ $(document).ready(function() {
       $("#guests").html(input)
     })
   });
-
-    // FOR DRAG -- simplified jquery in the code head
-
-//     //Make the DIV element draggagle:
-// dragElement(document.querySelector(".mydiv"));
-
-// function dragElement(elmnt) {
-//   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-//   if (document.getElementById(elmnt.id + "header")) {
-//     /* if present, the header is where you move the DIV from:*/
-//     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-//   } else {
-//     /* otherwise, move the DIV from anywhere inside the DIV:*/
-//     elmnt.onmousedown = dragMouseDown;
-//   }
-
-//   function dragMouseDown(e) {
-//     e = e || window.event;
-//     e.preventDefault();
-//     // get the mouse cursor position at startup:
-//     pos3 = e.clientX;
-//     pos4 = e.clientY;
-//     document.onmouseup = closeDragElement;
-//     // call a function whenever the cursor moves:
-//     document.onmousemove = elementDrag;
-//   }
-
-//   function elementDrag(e) {
-//     e = e || window.event;
-//     e.preventDefault();
-//     // calculate the new cursor position:
-//     // pos1 = pos3 - e.clientX;
-//     // pos2 = pos4 - e.clientY;
-//     // pos3 = e.clientX;
-//     // pos4 = e.clientY;
-//     // // set the element's new position:
-//     // elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-//     // elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-//      elmnt.style.top = e.clientY - 50 + "px";
-//     elmnt.style.left = e.clientX - 50 + "px";
-//     // console.log(e.clientY);
-//   }
-
-//   function closeDragElement() {
-//     /* stop moving when mouse button is released:*/
-//     document.onmouseup = null;
-//     document.onmousemove = null;
-//   }
-// }
 
   </script>
 
