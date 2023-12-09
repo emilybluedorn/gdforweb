@@ -96,6 +96,10 @@ padding-bottom:40px;
   border-top: solid 1px black;
 }
 
+.adjuster {
+  display: flex;
+  margin-bottom:20px;
+}
 
 .adjustments {
   display:grid;
