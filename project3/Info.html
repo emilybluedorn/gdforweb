@@ -23,48 +23,11 @@
 
 
   <div class="about">
-    &#10047;&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;Fleuron Type is a foundry producing historically relevant and open sourced revival fonts.&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;&#10047;
+    &#10047;Fleuron Type is a foundry producing open sourced revival fonts.
   </div>
   
 
-  
-  <script>
 
-var range = document.getElementById("range");
-var body = document.body;
-var font = document.querySelector(".txt .font");
-
-checkFontSize();
-
-range.oninput = function () {
-  console.log(this.values);
-  body.style.setProperty("font-size", this.value + "px");
-  window.localStorage.setItem("fontSize", this.value + "px");
-  window.localStorage.setItem("range", this.value);
-  font.innerHTML = this.value + "px";
-};
-
-function checkFontSize() {
-  var fontSize = window.localStorage.getItem("fontSize");
-  var rangeValue = window.localStorage.getItem("range");
-
-  if (fontSize !== null) {
-    body.style.setProperty("font-size", fontSize);
-    range.value = rangeValue;
-    font.innerHTML = fontSize;
-  } else {
-    body.style.setProperty("font-size", "15px");
-    range.value = 15;
-    font.innerHTML = "font-size is : " + "<b>" + range.value + "px";
-  }
-
-}
-
-var editable = document.getElementById("editor-content");
-    editable.contentEditable = "true";
-
-
-  </script>
 
 
 </body>
